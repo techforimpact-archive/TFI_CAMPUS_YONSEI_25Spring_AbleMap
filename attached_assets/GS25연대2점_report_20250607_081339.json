@@ -1,0 +1,95 @@
+{
+  "image_path": "data/imagedata/GS25연대2점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/GS25연대2점_overlay_20250607_081339.png",
+  "kakao_mapping": {
+    "place_id": "12297028",
+    "place_name": "GS25 연대2점",
+    "coordinates": {
+      "lat": 37.5585777070086,
+      "lng": 126.936452088466
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "GS25_연대2점",
+    "roadNm": "연세로9길_8"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 20,
+        "ratio": 0.00078125,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 11294,
+        "ratio": 0.441171875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.3890625,
+      "door_detection": 0.0,
+      "building_detection": 0.9859659996458296,
+      "sidewalk_detection": 1.0,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 15-20cm 높이의 단차 1개",
+    "stair_severity_assessment": "입구에 1단의 낮은 단차가 있으나, 휠체어 사용자가 동행인의 도움을 받으면 쉽게 극복 가능한 수준입니다. 독립적 접근시에는 어려움이 있을 수 있습니다.",
+    "stair_detection_confidence": "낮음",
+    "additional_obstacles_impact": [
+      "입구 앞 냉장고 등의 진열대가 통로를 약간 좁게 만들 수 있으나 통행에는 지장 없음",
+      "보도블록이 평탄하여 접근로는 양호함"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 우회 경로는 보이지 않으며, 정면 입구가 유일한 접근로로 보입니다",
+    "recommendations": {
+      "for_independent": [
+        "휴대용 경사로를 미리 준비하여 방문",
+        "점원에게 도움 요청을 위한 호출벨 활용",
+        "단차가 낮으므로 전동휠체어의 경우 조심스럽게 시도 가능"
+      ],
+      "for_assisted": [
+        "동행인 1명이면 충분히 도움 가능",
+        "입구 단차 통과시 후진으로 진입하는 것이 안전",
+        "매장 내부 공간이 협소할 수 있으니 피크시간 피하기"
+      ],
+      "facility_improvements": [
+        "입구 단차 제거 또는 영구 경사로 설치",
+        "자동문 설치로 독립적 접근성 향상",
+        "입구 앞 공간 확보를 위한 진열대 재배치"
+      ]
+    },
+    "observations": [
+      "전형적인 소규모 편의점으로 1단의 낮은 단차 존재",
+      "입구 문이 유리문으로 폭은 적절해 보임",
+      "보도와 연결성은 양호하나 단차가 접근성 제한",
+      "매장 규모가 작아 내부 이동 공간도 고려 필요"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.39로 낮아 이미지 육안 검토를 우선하였으며, 입구의 검은색 부분이 1단 정도의 단차로 판단됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:14:17.061469"
+}

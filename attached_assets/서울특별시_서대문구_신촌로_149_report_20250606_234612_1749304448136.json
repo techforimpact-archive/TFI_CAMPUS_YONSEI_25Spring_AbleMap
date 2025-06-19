@@ -1,0 +1,106 @@
+{
+  "kakao_mapping": {
+    "place_id": "1785229337",
+    "place_name": "컴포즈커피 신촌자이엘라점",
+    "coordinates": {
+      "lat": "37.5569517842389",
+      "lng": "126.942458680703"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "컴포즈커피 신촌자이엘라점",
+    "roadNm": "신촌로_149"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 12351,
+        "ratio": 0.4824609375
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20141119",
+      "faclInfId": "20155825539",
+      "faclLat": "37.55695178",
+      "faclLng": "126.9424587",
+      "faclNm": "신촌자이엘라",
+      "faclTyCd": "금융업소 등 일반업무시설",
+      "lcMnad": "서울특별시 서대문구 신촌로 149",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011200-3-01040036"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "승강기",
+        "장애인사용가능화장실",
+        "장애인전용주차구역",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": true,
+        "features": [
+          "장애인전용주차구역"
+        ]
+      },
+      "restroom": {
+        "available": true,
+        "features": [
+          "장애인사용가능화장실"
+        ]
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 10,
+    "internal_accessibility_score": 8,
+    "final_accessibility_score": 9,
+    "stairs_count": "0개 (계단 없음)",
+    "stairs_height": "지면과 동일한 높이로 단차 없음",
+    "stair_detection_confidence": "높음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구가 보도와 동일한 높이에 위치하여 휠체어 및 보행보조기 사용자가 직접 접근 가능",
+    "recommendations": [
+      "현재 우수한 접근성을 유지하고 있으나, 시각장애인을 위한 점자블록 설치 권장",
+      "입구 주변 음성안내 시스템 도입으로 시각장애인 접근성 향상 가능",
+      "야간 조명을 강화하여 저시력자의 안전한 접근 지원"
+    ],
+    "observations": [
+      "커피숍 입구가 보도와 완전히 평면으로 연결되어 있음",
+      "넓은 보도폭으로 휠체어 회전 공간 충분",
+      "주출입구 주변에 계단이나 턱이 전혀 없음",
+      "승강기와 장애인 화장실, 전용 주차구역 모두 구비",
+      "신촌자이엘라 상가 내 위치한 접근성 우수 시설"
+    ],
+    "noise_filtering_summary": "이미지 분석 결과 계단으로 오인될 수 있는 요소가 전혀 감지되지 않았으며, 평탄한 보도와 입구가 확인됨. 세그멘테이션에서 감지된 건물 요소(48.2%)는 상가 건물 외관으로 접근성 장애물이 아님"
+  },
+  "timestamp": "2025-06-06T23:46:41.334996"
+}

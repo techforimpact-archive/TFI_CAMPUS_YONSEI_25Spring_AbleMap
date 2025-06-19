@@ -1,0 +1,109 @@
+{
+  "kakao_mapping": {
+    "place_id": "424123353",
+    "place_name": "명품설렁탕&명품북어국",
+    "coordinates": {
+      "lat": "37.5569313494667",
+      "lng": "126.943616256338"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "명품설렁탕&명품북어국",
+    "roadNm": "신촌로_157"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 505,
+        "ratio": 0.0197265625,
+        "estimated_size": "small"
+      },
+      "building": {
+        "pixel_count": 12906,
+        "ratio": 0.504140625
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20200403",
+      "faclInfId": "20155825543",
+      "faclLat": "0",
+      "faclLng": "0",
+      "faclNm": "화영빌딩",
+      "faclTyCd": "의원·치과의원·한의원·조산소·산후조리원",
+      "lcMnad": "서울특별시 서대문구 신촌로 157",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011200-1-00900085"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "승강기",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": false,
+        "features": []
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 8,
+    "internal_accessibility_score": 5,
+    "final_accessibility_score": 7,
+    "stairs_count": "3-4개",
+    "stairs_height": "약 45-60cm (각 계단 15cm 기준)",
+    "stair_detection_confidence": "높음",
+    "alternative_route": false,
+    "alternative_route_description": "경사로나 별도의 휠체어 접근 경로가 보이지 않음",
+    "recommendations": [
+      "주출입구 옆에 휠체어 경사로 설치 필요",
+      "장애인 전용 주차구역 마련 필요",
+      "장애인 화장실 설치 필요",
+      "계단 양쪽에 안전 난간 설치 권장",
+      "시각장애인을 위한 점자블록 및 음성 안내 시스템 도입 필요"
+    ],
+    "observations": [
+      "주출입구 전면에 3-4개의 계단이 명확히 존재",
+      "승강기는 있으나 장애인 화장실과 전용 주차구역이 없음",
+      "보도와 건물 입구 사이에 점자블록이 설치되어 있음",
+      "입구 문이 자동문으로 보여 휠체어 접근이 용이할 것으로 예상",
+      "건물이 비교적 최근(2020년)에 설립되었으나 일부 편의시설이 부족"
+    ],
+    "noise_filtering_summary": "세그멘테이션 분석 결과 계단이 명확히 감지되었으며(pixel ratio 0.0197), 실제 이미지에서도 주출입구 앞 3-4개의 계단이 확인됨. 노이즈 없이 정확한 검출 결과로 판단됨"
+  },
+  "timestamp": "2025-06-06T23:47:20.146600"
+}

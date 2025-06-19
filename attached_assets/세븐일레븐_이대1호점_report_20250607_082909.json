@@ -1,0 +1,96 @@
+{
+  "image_path": "data/imagedata/세븐일레븐_이대1호점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/세븐일레븐_이대1호점_overlay_20250607_082909.png",
+  "kakao_mapping": {
+    "place_id": "7880518",
+    "place_name": "세븐일레븐 이대1호점",
+    "coordinates": {
+      "lat": 37.5578167949284,
+      "lng": 126.94256824987
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "세븐일레븐_이대1호점",
+    "roadNm": "신촌역로_13"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 258,
+        "ratio": 0.010078125,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 16018,
+        "ratio": 0.625703125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.9095238095238095,
+      "door_detection": 0.0,
+      "building_detection": 0.9996566362841803,
+      "sidewalk_detection": 0.8910447761194029,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (각 단 10-15cm)",
+    "stair_severity_assessment": "경미한 수준의 계단으로, 2단 구조입니다. 첫 번째 단은 보도에서 플랫폼으로, 두 번째 단은 플랫폼에서 매장 입구로 이어집니다. 전체 높이차는 크지 않으나 휠체어 독립 접근에는 장애가 됩니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "의자(chair): 입구 우측에 위치하나 이동 가능한 장애물로 영향도 낮음 (-0.2점)",
+      "노란색 점자블록: 시각장애인용 안내시설로 휠체어 접근에는 영향 없음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 경사로나 우회 경로가 보이지 않습니다",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태로는 독립적 접근이 어려움",
+        "휴대용 경사판 사용 시 접근 가능",
+        "매장 직원에게 도움 요청 권장"
+      ],
+      "for_assisted": [
+        "1-2명의 도움으로 안전하게 접근 가능",
+        "계단이 낮아 들어올리기 비교적 용이",
+        "입구 문이 자동문으로 보여 진입은 수월"
+      ],
+      "facility_improvements": [
+        "간이 경사로 설치 권장 (2단 계단 극복용)",
+        "입구 앞 평탄 공간 확보",
+        "휠체어 접근 가능 표시 설치"
+      ]
+    },
+    "observations": [
+      "편의점 입구에 2단의 낮은 계단 확인",
+      "자동문으로 보이는 유리문 설치",
+      "보도와 연결되어 있으나 단차 존재",
+      "입구 앞 공간이 협소하여 회전 공간 부족",
+      "점자블록이 설치되어 시각장애인 접근성은 고려됨"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.91로 높아 검출 결과를 신뢰. 실제 이미지에서도 명확한 2단 계단 구조 확인. 기타 노이즈 요소는 발견되지 않음.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:29:46.357992"
+}

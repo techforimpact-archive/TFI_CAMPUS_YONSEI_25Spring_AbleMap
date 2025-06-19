@@ -1,0 +1,102 @@
+{
+  "image_path": "data/imagedata/GS25_신촌사랑점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/GS25_신촌사랑점_overlay_20250607_080940.png",
+  "kakao_mapping": {
+    "place_id": "17056684",
+    "place_name": "GS25 신촌사랑점",
+    "coordinates": {
+      "lat": 37.5568259560692,
+      "lng": 126.937403683803
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "GS25_신촌사랑점",
+    "roadNm": "연세로2가길_19"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": false,
+    "obstacles": [
+      "stairs",
+      "stairs_at_entrance"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 83,
+        "ratio": 0.0032421875,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "door": {
+        "pixel_count": 249,
+        "ratio": 0.0097265625,
+        "estimated_width": "narrow"
+      },
+      "stairs_to_door_distance": 2.0,
+      "sidewalk_to_door_distance": 5.0,
+      "building": {
+        "pixel_count": 11672,
+        "ratio": 0.4559375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.5326450892857143,
+      "door_detection": 0.7431463068181818,
+      "building_detection": 0.9870630568882797,
+      "sidewalk_detection": 0.9797687861271676,
+      "overall_reliability": "high"
+    },
+    "stair_severity": "mild",
+    "has_door": true,
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 2
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 8,
+    "recommended_access_score": 8,
+    "final_accessibility_score": 8,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "경미한 수준의 단차로, 편의점 입구에 일반적으로 존재하는 문턱 정도의 높이입니다. 휠체어 사용자에게는 장애요소이지만 극복 가능한 수준입니다.",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "입구 앞 상품 진열대가 통행 폭을 약간 좁히고 있음",
+      "점자블록이 있어 시각장애인 접근성은 좋으나 휠체어 주행시 약간의 불편 가능"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 대체 경로는 확인되지 않음",
+    "recommendations": {
+      "for_independent": [
+        "휠체어 앞바퀴를 살짝 들어 단차를 넘는 기술이 필요합니다",
+        "입구 진입 시 충분한 공간 확보를 위해 진열대 쪽을 피해 접근하세요"
+      ],
+      "for_assisted": [
+        "동행인이 휠체어 뒤쪽을 살짝 들어주면 쉽게 진입 가능합니다",
+        "1명의 도움으로 충분히 접근 가능한 수준입니다"
+      ],
+      "facility_improvements": [
+        "간이 경사로 설치를 권장합니다",
+        "입구 앞 진열대 위치 조정으로 통행 폭 확보 필요",
+        "문턱 제거 또는 높이 최소화 공사 검토"
+      ]
+    },
+    "observations": [
+      "전형적인 GS25 편의점 입구 구조",
+      "점자블록이 설치되어 있어 장애인 접근성 고려가 일부 되어 있음",
+      "입구 폭은 휠체어 통행에 충분해 보임",
+      "바닥이 평탄하고 보도와 잘 연결되어 있음"
+    ],
+    "noise_filtering_summary": "검출 신뢰도 0.53으로 중간 수준이며, 이미지 분석 결과 편의점 입구의 일반적인 문턱 수준의 단차만 확인됨. 심각한 계단은 없는 것으로 판단",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:10:18.985118"
+}

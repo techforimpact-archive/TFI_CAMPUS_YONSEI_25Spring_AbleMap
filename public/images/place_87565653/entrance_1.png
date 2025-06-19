@@ -1,0 +1,97 @@
+{
+  "image_path": "data/imagedata/빠빠빠치킨_신촌본점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/빠빠빠치킨_신촌본점_overlay_20250607_082522.png",
+  "kakao_mapping": {
+    "place_id": "87565653",
+    "place_name": "빠빠빠치킨 신촌본점",
+    "coordinates": {
+      "lat": 37.558871753215,
+      "lng": 126.935713914792
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "빠빠빠치킨_신촌본점",
+    "roadNm": "연세로11길_19"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 1202,
+        "ratio": 0.046953125,
+        "estimated_size": "small",
+        "estimated_count": 4
+      },
+      "building": {
+        "pixel_count": 18050,
+        "ratio": 0.705078125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.8187830687830688,
+      "door_detection": 0.0,
+      "building_detection": 0.9994182825484765,
+      "sidewalk_detection": 0.8166311300639659,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "moderate",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 4,
+    "assisted_access_score": 7,
+    "recommended_access_score": 7,
+    "final_accessibility_score": 7,
+    "access_recommendation": "assisted",
+    "stairs_count": 3,
+    "stairs_height": "약 45-60cm (3단 기준)",
+    "stair_severity_assessment": "중간 정도의 심각도. 상가 건물 입구의 전형적인 3-4단 계단으로, 휠체어 사용자가 혼자서는 접근이 매우 어렵고 위험하나, 1-2명의 도움이 있으면 접근 가능한 수준입니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "전신주: 보도 공간을 일부 차지하나 우회 가능 (-0.5점)",
+      "노란색 안전 표시: 계단 인지에 도움이 되는 긍정적 요소",
+      "주차 방지 블록: 보도와 차도 구분에 도움"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "이미지에서 경사로나 대체 진입로는 확인되지 않음",
+    "recommendations": {
+      "for_independent": [
+        "혼자 방문은 권장하지 않음",
+        "사전에 가게에 연락하여 도움 요청 고려",
+        "전동 휠체어의 경우 계단 오르기 기능이 있어도 안전상 위험"
+      ],
+      "for_assisted": [
+        "최소 1-2명의 동행인과 함께 방문 권장",
+        "수동 휠체어의 경우 2명의 도움이 있으면 안전하게 접근 가능",
+        "계단 앞뒤 공간이 충분하여 도움받기 용이"
+      ],
+      "facility_improvements": [
+        "휴대용 경사로 설치 권장",
+        "입구 우측 공간을 활용한 고정식 경사로 설치 검토",
+        "계단 옆 손잡이 설치로 보행 약자 접근성 향상"
+      ]
+    },
+    "observations": [
+      "전형적인 상가 건물 1층 입구 구조",
+      "계단이 명확히 3단으로 확인됨",
+      "보도가 넓어 휠체어 대기 및 회전 공간 충분",
+      "노란색 안전 표시로 계단 인지성 양호",
+      "입구 문이 유리문으로 폭이 충분해 보임"
+    ],
+    "noise_filtering_summary": "검출 신뢰도가 0.82로 높아 계단 검출 결과를 신뢰할 수 있으며, 이미지에서도 3단의 계단이 명확히 확인됨. 노이즈 필터링 후에도 계단의 존재와 규모가 일치함.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:25:57.175194"
+}

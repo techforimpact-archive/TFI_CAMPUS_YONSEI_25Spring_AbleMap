@@ -1,0 +1,95 @@
+{
+  "image_path": "data/imagedata/GS25노고산호호점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/GS25노고산호호점_overlay_20250607_081021.png",
+  "kakao_mapping": {
+    "place_id": "27498588",
+    "place_name": "GS25 노고산호호점",
+    "coordinates": {
+      "lat": 37.554654214226,
+      "lng": 126.938130028409
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "GS25_노고산호호점",
+    "roadNm": "신촌로20길_12"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 79,
+        "ratio": 0.0030859375,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 14306,
+        "ratio": 0.558828125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.514296875,
+      "door_detection": 0.0,
+      "building_detection": 0.9971690199916119,
+      "sidewalk_detection": 0.8136304909560723,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 15-20cm 정도의 낮은 단차",
+    "stair_severity_assessment": "매우 경미한 수준의 단차로, 편의점 입구에 흔히 있는 도로와 건물 사이의 높이 차이로 판단됨. 검출된 계단은 매우 작은 면적(0.3%)으로 실제 심각한 장애물은 아님",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "검출된 계단 외 추가 장애물 없음",
+      "입구 앞 공간이 넓고 평탄하여 휠체어 회전 및 접근 용이"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 대체 경로는 필요하지 않으며, 현재 입구로 충분히 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "낮은 단차이므로 숙련된 휠체어 사용자는 독립적 접근 가능",
+        "단차 부분에서 속도를 줄이고 조심스럽게 접근 권장",
+        "가능하면 단차가 가장 낮은 부분으로 접근"
+      ],
+      "for_assisted": [
+        "동행인이 있을 경우 단차 통과 시 가벼운 보조만으로 충분",
+        "휠체어 앞바퀴를 살짝 들어주는 정도의 도움으로 안전하게 진입 가능"
+      ],
+      "facility_improvements": [
+        "작은 경사판 설치로 완전한 무장애 접근 가능",
+        "단차 부분에 시각적 표시로 안전성 향상",
+        "자동문 설치 시 더욱 편리한 접근 가능"
+      ]
+    },
+    "observations": [
+      "GS25 편의점으로 일반적인 상업 건물",
+      "입구 앞 보도가 넓고 평탄하여 접근성 양호",
+      "유리문으로 내부가 잘 보여 시인성 좋음",
+      "검출된 계단은 매우 작은 면적으로 실제로는 경미한 단차로 판단",
+      "전반적으로 접근성이 양호한 편의점"
+    ],
+    "noise_filtering_summary": "검출된 계단 영역이 매우 작고(0.3%) 신뢰도가 중간 수준(0.51)이므로, 실제로는 편의점 입구의 일반적인 낮은 단차로 해석. 심각한 계단이 아닌 경미한 높이 차이로 필터링",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:10:56.801481"
+}

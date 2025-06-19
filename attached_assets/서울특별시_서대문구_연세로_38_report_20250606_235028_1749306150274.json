@@ -1,0 +1,101 @@
+{
+  "kakao_mapping": {
+    "place_id": "8092640",
+    "place_name": "창천교회",
+    "coordinates": {
+      "lat": "37.5591593273803",
+      "lng": "126.937685697839"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "창천교회",
+    "roadNm": "연세로_38"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 19151,
+        "ratio": 0.7480859375
+      }
+    },
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20100330",
+      "faclInfId": "20155827451",
+      "faclLat": "37.55915933",
+      "faclLng": "126.9376857",
+      "faclNm": "창천교회",
+      "faclTyCd": "종교집회장",
+      "lcMnad": "서울특별시 서대문구 연세로 38",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011600-1-00470039"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "장애인전용주차구역",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": true,
+        "features": [
+          "장애인전용주차구역"
+        ]
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 10,
+    "internal_accessibility_score": 5,
+    "final_accessibility_score": 7,
+    "stairs_count": "0개",
+    "stairs_height": "계단 없음 - 지면과 동일한 높이",
+    "stair_detection_confidence": "높음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구가 지면과 동일한 높이에 위치하여 계단 없이 직접 진입 가능",
+    "recommendations": [
+      "장애인 화장실 설치가 시급히 필요합니다",
+      "승강기 설치를 통해 상층부 접근성 개선이 필요합니다",
+      "점자블록 등 유도 및 안내 설비 설치를 권장합니다",
+      "장애인사용가능객실 마련을 고려해주세요"
+    ],
+    "observations": [
+      "주출입구가 주차장과 동일한 높이에 위치하여 휠체어 접근이 매우 용이합니다",
+      "장애인전용주차구역이 잘 마련되어 있습니다",
+      "주출입구의 높이차이가 완전히 제거되어 있습니다",
+      "입구 폭이 충분하여 휠체어 통행에 문제가 없습니다"
+    ],
+    "noise_filtering_summary": "계단으로 오인될 수 있는 주차장 표시선과 건물 외벽의 패턴이 있으나, 실제 계단은 존재하지 않음을 확인"
+  },
+  "timestamp": "2025-06-06T23:50:53.768480"
+}

@@ -1,0 +1,86 @@
+{
+  "image_path": "data/imagedata/독수리약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/독수리약국_overlay_20250607_081828.png",
+  "kakao_mapping": {
+    "place_id": "10307858",
+    "place_name": "독수리약국",
+    "coordinates": {
+      "lat": 37.5587839163385,
+      "lng": 126.937240313986
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "독수리약국",
+    "roadNm": "연세로_36"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 14244,
+        "ratio": 0.55640625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9994383600112329,
+      "sidewalk_detection": 0.8679807326657372,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음 - 평지 접근",
+    "stair_severity_assessment": "계단이 감지되지 않았으며, 건물 입구까지 평탄한 보도로 연결되어 있습니다. 검출 신뢰도가 낮지만 이미지상 명확히 계단이 없는 것으로 확인됩니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "전신주가 보도에 있으나 충분한 통행 폭 확보됨 (-0.5점)",
+      "입구 앞 평탄한 공간 확보로 회전 공간 충분"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 무단차로 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "보도에서 입구까지 직진으로 접근 가능",
+        "전신주 좌측으로 충분한 통행 공간 활용",
+        "입구 앞 평탄한 공간에서 방향 전환 가능"
+      ],
+      "for_assisted": [
+        "독립 접근이 충분히 가능하므로 특별한 도움 불필요",
+        "필요시 문 개폐 도움 정도만 제공"
+      ],
+      "facility_improvements": [
+        "현재 접근성이 우수하여 특별한 개선사항 없음",
+        "자동문 설치 시 완벽한 접근성 확보 가능"
+      ]
+    },
+    "observations": [
+      "약국 건물로 1층 상가 형태",
+      "보도에서 입구까지 무단차 접근 가능",
+      "넓은 유리문으로 시야 확보 양호",
+      "입구 앞 충분한 평탄 공간 확보",
+      "보도 상태 양호하며 평탄함"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 낮으나(0.00), 이미지 분석 결과 실제로 계단이 없는 무단차 접근 구조임이 확인됨. 건물 감지는 정확하게 이루어짐(1.00).",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:18:56.406546"
+}

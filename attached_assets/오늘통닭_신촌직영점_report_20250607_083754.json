@@ -1,0 +1,86 @@
+{
+  "image_path": "data/imagedata/오늘통닭_신촌직영점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/오늘통닭_신촌직영점_overlay_20250607_083754.png",
+  "kakao_mapping": {
+    "place_id": "855767372",
+    "place_name": "오늘통닭 신촌직영점",
+    "coordinates": {
+      "lat": 37.5590445216786,
+      "lng": 126.936467197506
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "오늘통닭_신촌직영점",
+    "roadNm": "연세로11길_8"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 18121,
+        "ratio": 0.7078515625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9997240770376911,
+      "sidewalk_detection": 0.9980544747081712,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 10,
+    "assisted_access_score": 10,
+    "recommended_access_score": 10,
+    "final_accessibility_score": 10,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "건물 입구가 보도와 동일한 높이에 위치하여 계단이 없음. 평지 접근 가능",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "장애물이 감지되지 않았으며, 입구까지 명확한 접근 경로 확보"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로가 필요하지 않음. 주 출입구로 직접 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "건물 앞 보도에서 바로 접근 가능",
+        "입구 문의 너비가 충분해 보이므로 휠체어 진입에 문제없음",
+        "보도의 평탄한 상태를 유지하여 안전한 접근 보장"
+      ],
+      "for_assisted": [
+        "동행인 도움이 필요하지 않은 우수한 접근성",
+        "필요시 문 개폐 도움 정도만 제공"
+      ],
+      "facility_improvements": [
+        "현재 우수한 접근성을 유지하고 있음",
+        "자동문 설치를 고려하면 더욱 완벽한 접근성 확보 가능",
+        "입구 앞 점자블록 설치로 시각장애인 접근성도 개선 가능"
+      ]
+    },
+    "observations": [
+      "건물 1층 상가 입구가 보도와 동일한 높이에 위치",
+      "입구까지 평탄한 경로 확보",
+      "충분한 입구 너비로 휠체어 접근 용이",
+      "보도가 잘 정비되어 있어 이동에 장애 없음",
+      "입구 앞 공간이 넓어 휠체어 회전 가능"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확인. 건물과 보도가 명확히 검출되어 평지 접근임을 검증",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:38:27.066811"
+}

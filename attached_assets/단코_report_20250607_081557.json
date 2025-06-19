@@ -1,0 +1,97 @@
+{
+  "image_path": "data/imagedata/단코.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/단코_overlay_20250607_081557.png",
+  "kakao_mapping": {
+    "place_id": "1743481382",
+    "place_name": "단코",
+    "coordinates": {
+      "lat": 37.5551121604531,
+      "lng": 126.933594814367
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "마포구",
+    "faclNm": "단코",
+    "roadNm": "신촌로14길_19"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 113,
+        "ratio": 0.0044140625,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 16037,
+        "ratio": 0.6264453125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.570703125,
+      "door_detection": 0.0,
+      "building_detection": 0.9999688220988963,
+      "sidewalk_detection": 0.667989417989418,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 높이의 낮은 단차",
+    "stair_severity_assessment": "경미한 수준의 단차로, 건물 입구 진입부에 한 단의 계단이 존재합니다. 검출 신뢰도가 중간 수준(0.57)이며, 이미지상으로도 낮은 단차가 확인됩니다.",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "보행자들이 입구 앞에 있으나 일시적이며 이동 가능",
+      "주차된 차량이 측면에 있으나 진입로를 막지 않음",
+      "입구 양옆의 화분이나 간판은 통행에 지장 없음"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 경사로나 우회 진입로는 보이지 않음",
+    "recommendations": {
+      "for_independent": [
+        "낮은 단차이지만 휠체어 단독 진입시 주의 필요",
+        "전동 휠체어의 경우 충분한 속도로 접근하여 단차 극복 시도 가능",
+        "수동 휠체어는 뒤로 젖히는 기술이 필요할 수 있음"
+      ],
+      "for_assisted": [
+        "동행인 1명의 도움으로 안전하게 진입 가능",
+        "단차 앞에서 휠체어 앞바퀴를 들어 올려 진입",
+        "입구 문폭이 충분해 보여 동행인과 함께 진입 가능"
+      ],
+      "facility_improvements": [
+        "휴대용 경사판 설치로 접근성 크게 개선 가능",
+        "단차 제거 또는 영구 경사로 설치 권장",
+        "입구 앞 평탄 공간 확보 및 유지"
+      ]
+    },
+    "observations": [
+      "Danko 매장 입구에 1단의 낮은 계단 존재",
+      "입구 문은 양개문으로 충분한 너비 확보",
+      "보도가 잘 정비되어 있고 평탄함",
+      "입구 앞 공간이 넓어 휠체어 회전 가능",
+      "건물이 모퉁이에 위치하여 접근 각도 선택 가능"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 중간 수준(0.57)이며, 실제 이미지에서도 입구 앞 낮은 단차가 확인됩니다. 검출된 계단의 픽셀 수가 적고(113픽셀, 0.44%) 'very small'로 분류되어 1단의 낮은 계단으로 판단됩니다.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:16:36.515014"
+}

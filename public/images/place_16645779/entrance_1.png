@@ -1,0 +1,83 @@
+{
+  "image_path": "data/imagedata/송학.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/송학_overlay_20250607_082948.png",
+  "kakao_mapping": {
+    "place_id": "16645779",
+    "place_name": "송학",
+    "coordinates": {
+      "lat": 37.558614633372,
+      "lng": 126.935759293767
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "송학",
+    "roadNm": "연세로9길_20"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 19956,
+        "ratio": 0.77953125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9976949288434556,
+      "sidewalk_detection": 0.9994753410283316,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 10,
+    "assisted_access_score": 10,
+    "recommended_access_score": 10,
+    "final_accessibility_score": 10,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "지면과 같은 높이",
+    "stair_severity_assessment": "계단이 없어 휠체어 접근에 전혀 문제가 없음",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로가 필요하지 않음",
+    "recommendations": {
+      "for_independent": [
+        "입구가 평지에 위치해 안전하게 접근 가능",
+        "보도에서 입구까지 단차 없이 진입 가능",
+        "출입문 폭이 충분해 보임"
+      ],
+      "for_assisted": [
+        "동행인 도움 없이도 독립적으로 접근 가능",
+        "필요시 출입문 개폐만 도움받으면 충분"
+      ],
+      "facility_improvements": [
+        "자동문 설치를 고려하면 더욱 편리할 것으로 보임",
+        "입구 앞 평탄한 회전 공간 유지 권장"
+      ]
+    },
+    "observations": [
+      "건물 입구가 보도와 같은 높이에 위치",
+      "계단이나 턱이 전혀 없는 평지 접근",
+      "입구 앞 공간이 충분히 확보되어 있음",
+      "전통적인 목조 구조의 상가 건물",
+      "보도가 잘 정비되어 있음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.00으로 매우 낮았으나, 이미지 분석 결과 실제로 계단이 없는 평지 입구임을 확인. 노이즈 필터링이 적절히 작동함",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:30:20.552471"
+}

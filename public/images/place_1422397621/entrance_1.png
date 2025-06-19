@@ -1,0 +1,85 @@
+{
+  "image_path": "data/imagedata/생마차_신촌점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/생마차_신촌점_overlay_20250607_082629.png",
+  "kakao_mapping": {
+    "place_id": "1422397621",
+    "place_name": "생마차 신촌점",
+    "coordinates": {
+      "lat": 37.558862610657,
+      "lng": 126.936467691497
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "생마차_신촌점",
+    "roadNm": "연세로11길_5"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 13994,
+        "ratio": 0.546640625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9999285408032014,
+      "sidewalk_detection": 0.9997609942638623,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 9.5,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "계단이 감지되지 않았으며, 이미지에서도 명확한 계단 구조가 보이지 않습니다. 평탄한 접근로가 확인됩니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "광고 입간판들이 보도에 설치되어 있으나 충분한 통행 공간 확보",
+      "파란색 안전콘이 설치되어 있으나 접근 경로를 방해하지 않음"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "주 출입구가 평탄하게 접근 가능하여 대체 경로가 필요하지 않음",
+    "recommendations": {
+      "for_independent": [
+        "보도의 점자블록을 따라 안전하게 이동 가능",
+        "입간판 사이의 충분한 공간으로 통행",
+        "출입구 전면이 평탄하여 휠체어 진입에 문제없음"
+      ],
+      "for_assisted": [
+        "특별한 도움 없이도 접근 가능",
+        "필요시 입간판 주변 통행 시 간단한 안내만 제공"
+      ],
+      "facility_improvements": [
+        "입간판 배치를 더 체계적으로 정리하여 통행 공간 확대",
+        "출입구 전면에 휠체어 진입 안내 표시 설치 권장"
+      ]
+    },
+    "observations": [
+      "1층 상가 건물로 계단 없이 평탄한 접근 가능",
+      "보도블록과 점자블록이 잘 정비되어 있음",
+      "출입구가 도로면과 같은 높이에 위치",
+      "광고 입간판이 많지만 통행에 충분한 공간 확보"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음이 확인됨. 건물 및 보도 검출은 100% 신뢰도로 정확한 분석 수행",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:28:07.732933"
+}

@@ -1,0 +1,86 @@
+{
+  "image_path": "data/imagedata/세븐일레븐_연대점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/세븐일레븐_연대점_overlay_20250607_082834.png",
+  "kakao_mapping": {
+    "place_id": "163504083",
+    "place_name": "세븐일레븐 연대점",
+    "coordinates": {
+      "lat": 37.557004893187,
+      "lng": 126.937742721687
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "세븐일레븐_연대점",
+    "roadNm": "연세로4길_12"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 19891,
+        "ratio": 0.7769921875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9995726710572621,
+      "sidewalk_detection": 0.8583892617449664,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "편의점 입구는 보도와 동일한 높이로 계단이 없어 휠체어 접근에 문제가 없습니다",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "플라스틱 상자들이 입구 좌측에 쌓여있으나 출입에는 영향 없음 (-0.5점)",
+      "ATM 기기가 우측에 있으나 충분한 공간 확보 (-0.5점)"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 완전히 평탄함",
+    "recommendations": {
+      "for_independent": [
+        "자동문이 설치되어 있어 혼자서도 쉽게 출입 가능",
+        "입구 앞 공간이 충분하여 휠체어 회전 가능",
+        "점자블록이 설치되어 있어 시각장애인도 접근 가능"
+      ],
+      "for_assisted": [
+        "동행인이 있을 경우 상자 정리 등 더 넓은 공간 확보 가능",
+        "쇼핑 후 물건 운반시 도움 받기 용이"
+      ],
+      "facility_improvements": [
+        "입구 좌측의 플라스틱 상자 보관 위치 변경 권장",
+        "휠체어 사용자를 위한 전용 주차 공간 표시 검토"
+      ]
+    },
+    "observations": [
+      "세븐일레븐 편의점으로 24시간 운영",
+      "자동문이 설치되어 있어 접근성 우수",
+      "보도와 입구가 동일 높이로 계단 없음",
+      "점자블록이 입구에 설치되어 있음",
+      "ATM 기기가 외부에 설치되어 있으나 통행에 지장 없음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확실히 확인. 건물 검출 신뢰도 1.00으로 편의점 구조를 명확히 파악",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:29:06.962270"
+}

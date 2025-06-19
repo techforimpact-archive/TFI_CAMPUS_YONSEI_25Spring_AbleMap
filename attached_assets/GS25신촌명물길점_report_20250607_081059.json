@@ -1,0 +1,93 @@
+{
+  "image_path": "data/imagedata/GS25신촌명물길점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/GS25신촌명물길점_overlay_20250607_081059.png",
+  "kakao_mapping": {
+    "place_id": "892498928",
+    "place_name": "GS25 신촌명물길점",
+    "coordinates": {
+      "lat": 37.5588353689462,
+      "lng": 126.939671117926
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "GS25_신촌명물길점",
+    "roadNm": "명물길_62"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 460,
+        "ratio": 0.01796875,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 14268,
+        "ratio": 0.55734375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.891156462585034,
+      "door_detection": 0.0,
+      "building_detection": 0.99526913372582,
+      "sidewalk_detection": 0.9936499171728327,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (표준 계단 1-2개 높이)",
+    "stair_severity_assessment": "경미한 수준의 계단으로 편의점 입구 앞에 1-2개의 낮은 계단이 있습니다. 높이가 낮아 동행인의 도움이 있으면 충분히 접근 가능합니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "야외 진열대: 입구 좌측에 위치하여 직접적인 접근 경로에는 영향 없음",
+      "주차된 차량: 우측에 위치하나 충분한 통행 공간 확보"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "현재 보이는 입구가 유일한 접근로로 판단됩니다",
+    "recommendations": {
+      "for_independent": [
+        "낮은 계단이지만 혼자서는 위험할 수 있으니 가급적 동행인과 함께 방문 권장",
+        "휠체어 사용자는 사전에 매장에 연락하여 도움 요청 고려"
+      ],
+      "for_assisted": [
+        "1-2명의 동행인이 있으면 안전하게 접근 가능",
+        "계단이 낮아 휠체어를 들어올리는 데 큰 어려움 없음"
+      ],
+      "facility_improvements": [
+        "이동식 경사로 설치로 독립적 접근성 크게 개선 가능",
+        "계단 옆 손잡이 설치로 안전성 향상",
+        "입구 계단 부분에 시각적 경고 표시 추가"
+      ]
+    },
+    "observations": [
+      "GS25 편의점으로 24시간 운영 가능성이 높아 접근성 중요",
+      "입구가 유리문으로 되어 있어 내부 확인 가능",
+      "보도블록이 평탄하게 설치되어 있어 계단 외 경로는 양호",
+      "계단 검출 신뢰도가 0.89로 높아 분석 결과 신뢰 가능"
+    ],
+    "noise_filtering_summary": "계단 검출이 명확하고(신뢰도 0.89) 작은 크기의 1개 그룹으로 식별되어 노이즈 없이 정확한 분석이 이루어졌습니다",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:11:33.386309"
+}

@@ -1,0 +1,174 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Star, User, X } from "lucide-react";
+import { isLoggedInWithKakao, loginWithKakao } from "@/lib/kakaoAuth";
+import { useToast } from "@/hooks/use-toast";
+
+interface HeaderProps {
+  toggleSidebar: () => void;
+  isMobile: boolean;
+}
+
+interface BookmarkPlace {
+  id: number;
+  name: string;
+  address: string;
+  categoryId: number;
+}
+
+export default function Header({ toggleSidebar, isMobile }: HeaderProps) {
+  const isLoggedIn = isLoggedInWithKakao();
+  const { toast } = useToast();
+  const [bookmarks, setBookmarks] = useState<BookmarkPlace[]>([]);
+  const [showBookmarks, setShowBookmarks] = useState(false);
+
+  const handleBookmarkClick = () => {
+    console.log("헤더: 북마크 버튼 클릭됨");
+    
+    // 로그인 상태가 아니면 알림 후 로그인 유도
+    if (!isLoggedIn) {
+      toast({
+        title: "로그인이 필요합니다",
+        description: "북마크 기능을 사용하려면 로그인해주세요.",
+        variant: "default",
+        duration: 3000,
+      });
+      // 로그인 페이지로 이동하거나 로그인 다이얼로그 표시 대신
+      // 카카오 로그인 직접 시작
+      loginWithKakao();
+      return;
+    }
+    
+    // 북마크 목록 가져오기 API 호출
+    fetch('/api/bookmarks')
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('북마크를 가져오는데 실패했습니다.');
+      })
+      .then(bookmarks => {
+        console.log('북마크 목록:', bookmarks);
+        setBookmarks(bookmarks);
+        setShowBookmarks(true);
+      })
+      .catch(error => {
+        console.error('북마크 API 오류:', error);
+        
+        // 오류 알림 표시
+        toast({
+          title: "북마크 오류",
+          description: "북마크를 불러오는데 실패했습니다.",
+          variant: "destructive",
+          duration: 3000,
+        });
+      });
+  };
+
+  const viewPlaceDetails = (placeId: number) => {
+    console.log(`장소 ${placeId} 상세 정보 보기`);
+    // 지도를 해당 장소로 이동하거나 상세 정보를 표시하는 로직 추가 필요
+    window.dispatchEvent(new CustomEvent('viewPlace', { detail: { placeId } }));
+    setShowBookmarks(false);
+  };
+
+  return (
+    <header className="bg-ablemap-orange shadow-md z-10 relative">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="flex items-center">
+          <img src="/images/logo.png" alt="AbleMap" className="h-10 object-contain max-w-[200px]" />
+        </div>
+        
+        <div className="flex items-center space-x-3">
+          {isMobile && (
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden bg-gray-100 hover:bg-gray-200 rounded-full p-2"
+              onClick={toggleSidebar}
+              aria-label="Toggle sidebar"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+              </svg>
+            </Button>
+          )}
+          
+          {/* 북마크 버튼 추가 - 항상 표시되도록 수정 */}
+          <div id="bookmark-btn-container" className="flex items-center" style={{display: 'flex !important'}}>
+            <Button 
+              variant="ghost"
+              size="icon"
+              id="bookmark-btn" 
+              className="bookmark-btn bg-ablemap-yellow hover:bg-yellow-500 text-white rounded-full p-2 !block"
+              style={{
+                display: 'inline-flex !important', 
+                opacity: '1 !important', 
+                visibility: 'visible !important',
+                position: 'relative',
+                zIndex: 999
+              }}
+              onClick={handleBookmarkClick}
+              aria-label="북마크"
+            >
+              <Star className="h-5 w-5" />
+            </Button>
+          </div>
+          
+          <Button 
+            variant="ghost"
+            size="icon"
+            className="bg-gray-100 hover:bg-gray-200 rounded-full p-2"
+            aria-label="내 정보"
+            onClick={() => window.location.href = '/profile'}
+          >
+            <User className="h-5 w-5" />
+          </Button>
+
+          <Button 
+            className="bg-ablemap-yellow hover:bg-yellow-400 text-ablemap-brown font-medium py-2 px-4 rounded-lg text-sm transition"
+            onClick={() => isLoggedIn ? null : loginWithKakao()}
+          >
+            {isLoggedIn ? '로그아웃' : '로그인'}
+          </Button>
+        </div>
+      </div>
+      
+      {/* 북마크 목록 모달 */}
+      {showBookmarks && (
+        <div className="absolute top-16 right-4 bg-white shadow-lg rounded-lg p-4 z-50 w-72 max-h-96 overflow-y-auto">
+          <div className="flex justify-between items-center mb-3">
+            <h3 className="font-bold text-ablemap-brown">북마크 목록</h3>
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="h-8 w-8 rounded-full" 
+              onClick={() => setShowBookmarks(false)}
+            >
+              <X className="h-4 w-4" />
+            </Button>
+          </div>
+          
+          {bookmarks.length === 0 ? (
+            <div className="text-gray-500 text-center py-4">
+              북마크된 장소가 없습니다.
+            </div>
+          ) : (
+            <ul className="space-y-2">
+              {bookmarks.map((place) => (
+                <li 
+                  key={place.id}
+                  className="p-2 hover:bg-gray-100 rounded cursor-pointer"
+                  onClick={() => viewPlaceDetails(place.id)}
+                >
+                  <div className="font-medium text-ablemap-brown">{place.name}</div>
+                  <div className="text-sm text-gray-500 truncate">{place.address}</div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+    </header>
+  );
+}

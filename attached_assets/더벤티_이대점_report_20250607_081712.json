@@ -1,0 +1,93 @@
+{
+  "image_path": "data/imagedata/더벤티_이대점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/더벤티_이대점_overlay_20250607_081712.png",
+  "kakao_mapping": {
+    "place_id": "1281875985",
+    "place_name": "더벤티 이대점",
+    "coordinates": {
+      "lat": 37.5593127212475,
+      "lng": 126.944645184819
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "더벤티_이대점",
+    "roadNm": "이화여대길_68"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 11,
+        "ratio": 0.0004296875,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 16522,
+        "ratio": 0.645390625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.4381510416666667,
+      "door_detection": 0.0,
+      "building_detection": 0.9999394746398741,
+      "sidewalk_detection": 1.0,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "매우 경미한 수준의 단차로, 건물 입구와 보도 사이의 작은 레벨 차이로 보임. 휠체어 사용자가 혼자서도 극복 가능한 수준",
+    "stair_detection_confidence": "낮음",
+    "additional_obstacles_impact": [
+      "원형 의자 2개가 있으나 통행에 지장을 주지 않는 위치에 배치됨"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 대체 경로는 필요하지 않으며, 현재 입구로 충분히 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "입구 앞 단차가 낮아 대부분의 휠체어 사용자가 혼자 접근 가능",
+        "충분한 회전 공간이 확보되어 있음",
+        "유리문의 개폐 상태 확인 후 접근 권장"
+      ],
+      "for_assisted": [
+        "동행인이 있을 경우 더욱 쉽게 접근 가능",
+        "문 개폐 시 도움을 받으면 더욱 편리함"
+      ],
+      "facility_improvements": [
+        "현재 상태로도 양호하나, 단차 부분에 경사 처리를 하면 더욱 개선됨",
+        "자동문 설치 시 독립 접근성이 더욱 향상될 것으로 예상"
+      ]
+    },
+    "observations": [
+      "건물 입구는 평탄한 보도블록으로 연결되어 있음",
+      "입구 앞에 충분한 활동 공간이 확보됨",
+      "원형 의자는 장애물이 아닌 휴식 공간으로 활용 가능",
+      "유리문으로 되어 있어 내부 시야 확보가 용이함",
+      "보도와 건물 사이의 단차가 매우 낮음"
+    ],
+    "noise_filtering_summary": "검출 신뢰도가 0.44로 낮고, 픽셀 수가 11개로 매우 적어 실제로는 계단이 아닌 작은 단차나 그림자로 판단됨. 이미지 분석 결과 명확한 계단 구조는 보이지 않음",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:17:45.907318"
+}

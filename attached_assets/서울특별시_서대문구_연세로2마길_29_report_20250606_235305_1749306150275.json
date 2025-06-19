@@ -1,0 +1,99 @@
+{
+  "kakao_mapping": {
+    "place_id": "1295937091",
+    "place_name": "나주어반",
+    "coordinates": {
+      "lat": "37.5584237940306",
+      "lng": "126.942009817209"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "나주어반",
+    "roadNm": "연세로2마길_29"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 13846,
+        "ratio": 0.540859375
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20221013",
+      "faclInfId": "20155827934",
+      "faclLat": "37.55842379",
+      "faclLng": "126.9420098",
+      "faclNm": "일반음식점",
+      "faclTyCd": "일반음식점",
+      "lcMnad": "서울특별시 서대문구 연세로2마길 29",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011200-1-01100038"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": false,
+        "features": []
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 10,
+    "internal_accessibility_score": 3,
+    "final_accessibility_score": 6,
+    "stairs_count": "0개 (계단 없음)",
+    "stairs_height": "주출입구와 도로면이 동일한 높이로 연결됨",
+    "stair_detection_confidence": "높음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구가 도로면과 평면으로 직접 연결되어 있어 휠체어 및 보행 보조기 사용자가 별도의 경사로나 리프트 없이도 자유롭게 접근 가능",
+    "recommendations": [
+      "장애인 전용 주차구역 설치가 시급히 필요합니다",
+      "장애인 사용 가능한 화장실 설치가 필수적입니다",
+      "시각장애인을 위한 점자블록 등 유도 및 안내 설비 설치를 권장합니다",
+      "입구 주변에 휠체어 사용자를 위한 충분한 회전 공간 확보를 검토해주세요"
+    ],
+    "observations": [
+      "주출입구가 도로면과 완전히 평면으로 연결되어 있어 외부 접근성이 매우 우수합니다",
+      "보도가 잘 정비되어 있고 입구까지 장애물이 없습니다",
+      "주출입구의 너비가 충분해 보여 휠체어 통행에 문제가 없을 것으로 판단됩니다",
+      "건물이 1층 음식점으로 보여 엘리베이터의 필요성은 낮습니다"
+    ],
+    "noise_filtering_summary": "세그멘테이션 분석 결과 계단으로 오인될 수 있는 요소가 없으며, 주출입구와 도로면이 평면으로 연결된 것이 명확히 확인됨. 건물(54.1%)과 보도가 주요 구성 요소로 식별됨"
+  },
+  "timestamp": "2025-06-06T23:53:38.587080"
+}

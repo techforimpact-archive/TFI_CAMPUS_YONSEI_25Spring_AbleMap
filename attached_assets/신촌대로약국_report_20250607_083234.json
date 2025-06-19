@@ -1,0 +1,121 @@
+{
+  "image_path": "data/imagedata/신촌대로약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/신촌대로약국_overlay_20250607_083234.png",
+  "kakao_mapping": {
+    "place_id": "713864547",
+    "place_name": "신촌대로약국",
+    "coordinates": {
+      "lat": 37.5562057965146,
+      "lng": 126.939295914138
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "신촌대로약국",
+    "roadNm": "신촌로_121"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 18463,
+        "ratio": 0.7212109375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9929859719438878,
+      "sidewalk_detection": 1.0,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20011207",
+      "faclInfId": "20155825537",
+      "faclLat": "0",
+      "faclLng": "0",
+      "faclNm": "아남오피스텔",
+      "faclTyCd": "금융업소 등 일반업무시설",
+      "lcMnad": "서울특별시 서대문구 신촌로 121",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011600-3-00200041"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "승강기",
+        "장애인전용주차구역",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": true,
+        "features": [
+          "장애인전용주차구역"
+        ]
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 10,
+    "internal_accessibility_score": 7,
+    "final_accessibility_score": 8,
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지 분석 결과 약국 입구는 평지에 위치하며 계단이 전혀 없습니다. 휠체어 및 보행 보조기구 사용자가 자유롭게 접근 가능합니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 앞 화분이 있으나 충분한 통행 공간이 확보되어 접근성에 영향을 미치지 않음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "계단이 없어 대체 경로가 필요하지 않음",
+    "recommendations": [
+      "현재 외부 접근성은 매우 우수한 상태입니다",
+      "장애인 화장실 설치를 통해 내부 접근성 개선 필요",
+      "유도 및 안내 설비 추가 설치 권장",
+      "장애인 사용 가능 객실 마련 검토"
+    ],
+    "observations": [
+      "1층 약국 입구는 완전히 평지로 되어 있어 휠체어 접근이 매우 용이함",
+      "보도와 입구 사이에 높이 차이가 없음",
+      "충분한 입구 폭이 확보되어 있음",
+      "승강기와 장애인 전용 주차구역이 구비되어 있음",
+      "주출입구 관련 시설은 모두 갖추고 있음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.00으로 매우 낮았으나, 실제 이미지 확인 결과 계단이 없는 것이 확인되어 검출 결과가 정확함. 건물 검출(0.99)과 보도 검출(1.00)의 높은 신뢰도로 전반적인 구조 파악이 명확함.",
+    "analysis_mode": "hybrid"
+  },
+  "timestamp": "2025-06-07T08:33:10.747660"
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>별안간출발 - 배리어프리 장소 검색</title>
+    <!-- Kakao Maps API - Using https:// explicitly -->
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=%VITE_KAKAO_JAVASCRIPT_KEY%&libraries=services,clusterer,drawing"></script>
+    <!-- Kakao Login SDK -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js" integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
+    <!-- Amplitude Analytics -->
+    <script src="https://cdn.amplitude.com/script/a5decfb794c0daeaccbf7ce7027d96df.js"></script>
+    <script>
+      // Amplitude 초기화 로깅 추가
+      console.log('🔧 Amplitude 스크립트 로드 완료');
+      try {
+        window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+        window.amplitude.init('a5decfb794c0daeaccbf7ce7027d96df', {"fetchRemoteConfig":true,"autocapture":true});
+        console.log('✅ Amplitude 초기화 성공');
+        
+        // Amplitude 객체 상태 확인
+        console.log('🔍 Amplitude 객체 확인:', {
+          exists: !!window.amplitude,
+          trackFunction: typeof window.amplitude.track,
+          methods: Object.keys(window.amplitude || {})
+        });
+        
+        // 테스트 이벤트 전송
+        window.amplitude.track('page_loaded', {
+          timestamp: new Date().toISOString(),
+          page: 'main'
+        });
+        console.log('📊 테스트 이벤트 전송됨: page_loaded');
+        
+        // amplitude track 함수를 래핑하여 모든 호출을 추적
+        const originalTrack = window.amplitude.track;
+        window.amplitude.track = function(eventName, properties) {
+          console.log('🎯 Amplitude track 호출됨:', eventName, properties);
+          console.trace('호출 스택:'); // 어디서 호출되었는지 추적
+          return originalTrack.call(this, eventName, properties);
+        };
+        
+        // 전역에서 amplitude 테스트 함수 추가
+        window.testAmplitude = function(eventName, properties) {
+          console.log('🧪 수동 Amplitude 테스트:', eventName, properties);
+          if (window.amplitude && window.amplitude.track) {
+            window.amplitude.track(eventName, properties);
+            console.log('✅ 수동 테스트 이벤트 전송됨');
+          } else {
+            console.error('❌ Amplitude 객체 또는 track 함수 없음');
+          }
+        };
+      } catch (error) {
+        console.error('❌ Amplitude 초기화 실패:', error);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>

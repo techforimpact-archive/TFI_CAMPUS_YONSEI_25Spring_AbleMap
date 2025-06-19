@@ -1,0 +1,86 @@
+{
+  "image_path": "data/imagedata/썬더치킨_신촌연대점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/썬더치킨_신촌연대점_overlay_20250607_083425.png",
+  "kakao_mapping": {
+    "place_id": "17066324",
+    "place_name": "썬더치킨 신촌연대점",
+    "coordinates": {
+      "lat": 37.5590277427586,
+      "lng": 126.935763466249
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "썬더치킨_신촌연대점",
+    "roadNm": "연세로11길_20"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 15493,
+        "ratio": 0.6051953125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.7934551087587942,
+      "sidewalk_detection": 0.9983771023900856,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지 분석 결과 건물 입구에 계단이 감지되지 않았으며, 평지 접근이 가능한 것으로 확인됨",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 주변 화분: 경로 폭을 약간 좁히나 통행에는 지장 없음 (-0.5점)",
+      "보도블록 연결부: 평탄하게 시공되어 있어 영향 미미함"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "평지 접근이 가능하여 대체 경로 불필요",
+    "recommendations": {
+      "for_independent": [
+        "입구 정면의 평탄한 보도를 통해 직접 접근 가능",
+        "화분 사이의 충분한 공간(약 1.5m 이상)을 통해 진입",
+        "차양막 아래 공간이 충분하여 우천시에도 안전하게 대기 가능"
+      ],
+      "for_assisted": [
+        "동행인이 있을 경우 더욱 편리한 접근 가능",
+        "필요시 입구 앞 임시 정차 후 진입 가능"
+      ],
+      "facility_improvements": [
+        "입구 앞 점자블록 설치로 시각장애인 접근성 향상 권장",
+        "자동문 설치 시 휠체어 접근성이 더욱 향상될 것으로 예상"
+      ]
+    },
+    "observations": [
+      "건물 입구가 보도와 동일한 높이에 위치하여 단차 없음",
+      "입구 전면에 충분한 회전 공간 확보",
+      "보도블록이 평탄하게 시공되어 있음",
+      "차양막이 설치되어 날씨 보호 가능",
+      "입구 폭이 휠체어 통행에 충분함"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음이 확실하며, 보도 검출 신뢰도 1.00으로 평탄한 접근로가 명확히 확인됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:34:59.601889"
+}

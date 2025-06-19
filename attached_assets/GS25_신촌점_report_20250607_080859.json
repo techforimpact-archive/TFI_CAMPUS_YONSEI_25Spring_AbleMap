@@ -1,0 +1,96 @@
+{
+  "image_path": "data/imagedata/GS25_신촌점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/GS25_신촌점_overlay_20250607_080859.png",
+  "kakao_mapping": {
+    "place_id": "12297053",
+    "place_name": "GS25 신촌점",
+    "coordinates": {
+      "lat": 37.5563377699349,
+      "lng": 126.936344324387
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "GS25_신촌점",
+    "roadNm": "신촌로_87-18"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 337,
+        "ratio": 0.0131640625,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 10319,
+        "ratio": 0.4030859375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.7974910394265233,
+      "door_detection": 0.0,
+      "building_detection": 0.973010950673515,
+      "sidewalk_detection": 0.9936102236421724,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "편의점 입구에 1단의 낮은 계단이 있으나, 높이가 비교적 낮아 동행인의 도움이 있으면 쉽게 극복 가능한 수준입니다. 독립 접근 시에는 휠체어 사용자가 스스로 극복하기 어려울 수 있습니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 앞 상품 진열대가 일부 통행 공간을 차지하고 있으나 이동 경로는 확보되어 있음",
+      "보도와 입구 사이의 단차가 주요 장애물로 작용"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 경사로나 대체 진입로는 확인되지 않음",
+    "recommendations": {
+      "for_independent": [
+        "휴대용 경사판 사용을 고려하세요",
+        "점포 측에 임시 경사판 설치 요청을 시도해보세요",
+        "가능하면 동행인과 함께 방문하는 것을 권장합니다"
+      ],
+      "for_assisted": [
+        "1명의 동행인이면 충분히 진입 가능합니다",
+        "계단이 낮아 휠체어를 살짝 들어올리는 정도로 극복 가능합니다",
+        "입구가 넓어 회전 공간은 충분합니다"
+      ],
+      "facility_improvements": [
+        "간단한 휴대용 경사판 비치를 권장합니다",
+        "영구적인 소형 경사로 설치가 가장 이상적입니다",
+        "단차 해소를 위한 경사 블록 설치를 고려하세요"
+      ]
+    },
+    "observations": [
+      "GS25 편의점 입구에 1단의 낮은 계단 확인",
+      "입구 문이 전면 유리로 되어 있어 넓고 개방적",
+      "보도와 연결성은 양호하나 단차가 존재",
+      "점포 앞 공간이 충분하여 휠체어 회전 가능",
+      "검출 신뢰도가 0.80으로 높아 계단 검출 결과를 신뢰할 수 있음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.80으로 높고, 이미지에서도 명확히 1단의 계단이 확인되어 노이즈 필터링 없이 검출 결과를 그대로 적용하였습니다.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:09:38.087153"
+}

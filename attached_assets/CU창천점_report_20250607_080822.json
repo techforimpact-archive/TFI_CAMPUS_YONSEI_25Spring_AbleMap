@@ -1,0 +1,86 @@
+{
+  "image_path": "data/imagedata/CU창천점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/CU창천점_overlay_20250607_080822.png",
+  "kakao_mapping": {
+    "place_id": "16875983",
+    "place_name": "CU 창천점",
+    "coordinates": {
+      "lat": 37.557036229264,
+      "lng": 126.93470573771
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "CU_창천점",
+    "roadNm": "연세로5나길_30-2"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 14936,
+        "ratio": 0.5834375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9993639528655598,
+      "sidewalk_detection": 0.8232546705998034,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 10,
+    "assisted_access_score": 10,
+    "recommended_access_score": 10,
+    "final_accessibility_score": 10,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지와 분석 결과 모두 계단이 감지되지 않았습니다. 편의점 입구는 평면 접근이 가능합니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "파라솔과 의자: 매장 외부에 설치되어 있으나 보도와 충분한 거리를 두고 있어 통행에 지장 없음",
+      "상품 진열대: 매장 내부에 위치하여 외부 접근성에 영향 없음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 완전히 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태로도 충분히 접근 가능합니다",
+        "보도블럭의 요철에 주의하며 진입하시기 바랍니다",
+        "횡단보도 경사로를 이용하여 안전하게 접근하세요"
+      ],
+      "for_assisted": [
+        "동행인의 도움 없이도 독립적 접근이 가능합니다",
+        "필요시 매장 직원에게 도움을 요청할 수 있습니다"
+      ],
+      "facility_improvements": [
+        "현재 접근성이 양호하므로 특별한 개선사항 없음",
+        "향후 자동문 설치를 고려하면 더욱 편리할 것입니다"
+      ]
+    },
+    "observations": [
+      "CU 편의점으로 평면 접근이 가능한 구조입니다",
+      "입구 앞 보도가 평탄하고 충분한 폭을 확보하고 있습니다",
+      "횡단보도와 연결된 경사로가 잘 조성되어 있습니다",
+      "입구 문이 유리문으로 되어 있어 시야 확보가 용이합니다",
+      "외부 장애물이 통행로를 방해하지 않도록 배치되어 있습니다"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확실히 확인. 건물 검출 신뢰도 1.00, 보도 검출 신뢰도 0.82로 평면 접근 환경임을 검증",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:08:57.099328"
+}

@@ -1,0 +1,110 @@
+{
+  "kakao_mapping": {
+    "place_id": "11054885",
+    "place_name": "북아현성결교회",
+    "coordinates": {
+      "lat": "37.5614905279474",
+      "lng": "126.957239765946"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "북아현성결교회",
+    "roadNm": "북아현로6길_9-6"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 13,
+        "ratio": 0.0005078125,
+        "estimated_size": "very small"
+      },
+      "building": {
+        "pixel_count": 14299,
+        "ratio": 0.5585546875
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "19990526",
+      "faclInfId": "20155823623",
+      "faclLat": "37.56149053",
+      "faclLng": "126.9572398",
+      "faclNm": "기독교대한성결교회(북아현교회)",
+      "faclTyCd": "종교집회장",
+      "lcMnad": "서울특별시 서대문구 북아현로6길 9-6",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011000-1-01180011"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "장애인전용주차구역",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": true,
+        "features": [
+          "장애인전용주차구역"
+        ]
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 8,
+    "internal_accessibility_score": 7,
+    "final_accessibility_score": 7,
+    "stairs_count": "약 15-20개의 계단",
+    "stairs_height": "약 2.5-3미터의 높이차이로 추정되며, 일반적인 건물 1층 높이에 해당",
+    "stair_detection_confidence": "높음",
+    "alternative_route": false,
+    "alternative_route_description": "주출입구로 향하는 넓은 계단이 유일한 접근 경로로 보이며, 별도의 경사로나 대체 경로가 보이지 않음",
+    "recommendations": [
+      "휠체어 리프트 또는 경사로 설치가 시급히 필요합니다",
+      "계단 양측에 안전 난간 설치를 권장합니다",
+      "시각장애인을 위한 점자블록 설치가 필요합니다",
+      "장애인 화장실 설치가 필요합니다",
+      "2층 이상 접근을 위한 엘리베이터 설치를 고려해야 합니다"
+    ],
+    "observations": [
+      "건물 전면에 넓은 계단이 주출입구까지 이어져 있음",
+      "장애인 전용 주차구역이 표시되어 있으나 주차장에서 입구까지 계단 없이 접근 불가",
+      "주출입구는 유리문으로 충분한 너비를 확보한 것으로 보임",
+      "계단 외에 대체 접근 경로가 보이지 않아 휠체어 사용자의 독립적 접근이 불가능"
+    ],
+    "noise_filtering_summary": "세그멘테이션 결과에서 계단 픽셀이 매우 적게 검출되었으나(13픽셀, 0.05%), 실제 이미지에서는 건물 전면을 가로지르는 대형 계단이 명확히 확인됨. 이는 세그멘테이션 모델의 오류로 판단되며, 육안 검토를 통해 정확한 계단 규모를 파악함"
+  },
+  "timestamp": "2025-06-06T23:40:59.743624"
+}

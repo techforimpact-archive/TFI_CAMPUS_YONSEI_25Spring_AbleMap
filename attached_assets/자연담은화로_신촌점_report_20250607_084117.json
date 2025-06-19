@@ -1,0 +1,84 @@
+{
+  "image_path": "data/imagedata/자연담은화로_신촌점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/자연담은화로_신촌점_overlay_20250607_084117.png",
+  "kakao_mapping": {
+    "place_id": "18757209",
+    "place_name": "자연담은화로 신촌점",
+    "coordinates": {
+      "lat": 37.5588601748192,
+      "lng": 126.935136261666
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "자연담은화로_신촌점",
+    "roadNm": "연세로11길_29"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 15860,
+        "ratio": 0.61953125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9998738965952081,
+      "sidewalk_detection": 0.9900406939387449,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 10,
+    "assisted_access_score": 10,
+    "recommended_access_score": 10,
+    "final_accessibility_score": 10,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지와 검출 결과 모두에서 계단이 확인되지 않음. 입구는 도로면과 같은 높이에 위치",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "건물 자체는 장애물이 아니며, 입구 접근에 방해되는 요소 없음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 완전히 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "입구까지 평탄한 경로로 안전하게 접근 가능",
+        "보도블록이 잘 정비되어 있어 휠체어 이동에 적합",
+        "횡단보도와 연결되어 있어 도로 횡단도 안전"
+      ],
+      "for_assisted": [
+        "동행 지원이 특별히 필요하지 않은 우수한 접근성",
+        "필요시 문 개폐 도움 정도만 있으면 충분"
+      ],
+      "facility_improvements": [
+        "현재 상태가 양호하여 특별한 개선사항 없음",
+        "자동문 설치 시 더욱 완벽한 접근성 확보 가능"
+      ]
+    },
+    "observations": [
+      "음식점 입구가 도로면과 같은 높이에 위치",
+      "입구 앞 보도가 넓고 평탄하게 정비됨",
+      "횡단보도가 바로 앞에 있어 접근성 우수",
+      "건물 검출 신뢰도가 높아 분석 결과가 신뢰할 만함"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음이 확실함. 보도 검출 신뢰도 0.99로 평탄한 접근로 확인",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:41:53.000146"
+}

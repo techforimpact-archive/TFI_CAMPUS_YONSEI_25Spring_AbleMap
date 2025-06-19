@@ -1,0 +1,97 @@
+{
+  "kakao_mapping": {
+    "place_id": "803205072",
+    "place_name": "바로선개혁교회",
+    "coordinates": {
+      "lat": "37.6567940872476",
+      "lng": "126.94817045999"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "은평구",
+    "faclNm": "바로선개혁교회",
+    "roadNm": "대서문길_15-11"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 17418,
+        "ratio": 0.680390625
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20101122",
+      "faclInfId": "20155802231",
+      "faclLat": "37.65679409",
+      "faclLng": "126.9481705",
+      "faclNm": "일반음식점",
+      "faclTyCd": "일반음식점",
+      "lcMnad": "서울특별시 은평구 대서문길 15-11",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1138011400-1-02790039"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "주출입구 높이차이 제거",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": false,
+        "features": []
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 10,
+    "internal_accessibility_score": 3,
+    "final_accessibility_score": 6,
+    "stairs_count": "0개 (계단 없음)",
+    "stairs_height": "지면과 동일한 높이의 평면 접근",
+    "stair_detection_confidence": "높음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구가 보도와 평면으로 직접 연결되어 있어 휠체어 사용자도 무리 없이 접근 가능",
+    "recommendations": [
+      "장애인 전용 화장실 설치가 시급히 필요합니다",
+      "2층 이상 시설 이용 시 승강기 설치를 고려해야 합니다",
+      "장애인 전용 주차구역 마련이 권장됩니다",
+      "시각장애인을 위한 점자블록 등 유도 안내 설비 설치가 필요합니다"
+    ],
+    "observations": [
+      "건물 1층 모서리에 위치한 음식점으로 평면 접근이 가능합니다",
+      "주출입구 높이차이가 제거되어 있어 휠체어 접근성이 우수합니다",
+      "보도에서 입구까지 장애물 없이 직접 진입 가능합니다",
+      "내부 편의시설(화장실, 승강기 등)이 전반적으로 부족한 상황입니다"
+    ],
+    "noise_filtering_summary": "세그멘테이션 분석 결과 계단이 감지되지 않았으며, 이미지상에서도 평면 입구가 명확히 확인됩니다. 보도와 입구 사이에 높이 차이가 없어 우수한 외부 접근성을 보입니다."
+  },
+  "timestamp": "2025-06-06T23:42:14.529797"
+}

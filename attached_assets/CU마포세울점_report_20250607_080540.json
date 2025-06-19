@@ -1,0 +1,99 @@
+{
+  "image_path": "data/imagedata/CU마포세울점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/CU마포세울점_overlay_20250607_080540.png",
+  "kakao_mapping": {
+    "place_id": "1687557623",
+    "place_name": "CU 마포세울점",
+    "coordinates": {
+      "lat": 37.5558722071888,
+      "lng": 126.941174759725
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "CU_마포세울점",
+    "roadNm": "백범로1길_84"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 1256,
+        "ratio": 0.0490625,
+        "estimated_size": "small",
+        "estimated_count": 2
+      },
+      "building": {
+        "pixel_count": 9984,
+        "ratio": 0.39
+      },
+      "railing_to_stairs_distance": 1.0
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.8240589198036006,
+      "door_detection": 0.0,
+      "building_detection": 0.9157151442307692,
+      "sidewalk_detection": 0.7088959491660047,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "has_railing": true,
+    "has_stairs_railing": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (각 계단 10-15cm 높이)",
+    "stair_severity_assessment": "경미한 수준의 계단으로, 전체 높이가 낮고 계단 수가 적어 동행인의 도움이 있다면 충분히 극복 가능한 장애물입니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "물병 박스: 이동 가능한 임시 장애물로 접근성에 미미한 영향 (-0.2점)",
+      "상품 진열대: 출입구 양옆에 위치하나 중앙 통로는 확보되어 있음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 경사로나 우회 경로는 보이지 않음",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태에서는 독립적 접근이 어려움",
+        "휠체어 사용자는 반드시 사전에 동행인 확보 필요",
+        "매장 직원에게 도움 요청 가능성 확인"
+      ],
+      "for_assisted": [
+        "1-2명의 동행인이 있다면 안전하게 접근 가능",
+        "계단이 낮아 휠체어를 들어올리기 비교적 수월함",
+        "물병 박스는 필요시 이동 가능"
+      ],
+      "facility_improvements": [
+        "휴대용 경사로 설치로 즉시 접근성 개선 가능",
+        "장기적으로는 고정식 경사로 설치 권장",
+        "입구 앞 평탄 공간 확보 필요"
+      ]
+    },
+    "observations": [
+      "GS25 편의점 입구에 2단의 낮은 계단 확인",
+      "계단 검출 신뢰도가 0.82로 높아 정확한 분석 가능",
+      "출입문은 자동문으로 보이며 폭이 충분해 보임",
+      "보도와 연결되어 있으나 계단이 주요 장애물",
+      "난간은 있으나 경사로는 설치되지 않음"
+    ],
+    "noise_filtering_summary": "검출 신뢰도가 높고 이미지에서 명확히 2단의 계단이 확인되어 노이즈 필터링 없이 그대로 적용. 계단의 픽셀 비율(4.9%)과 실제 시각적 크기가 일치함.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:06:17.689642"
+}

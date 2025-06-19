@@ -1,0 +1,58 @@
+{
+  "kakao_mapping": {
+    "place_id": "8092640",
+    "place_name": "창천교회",
+    "coordinates": {
+      "lat": "37.5591593273803",
+      "lng": "126.937685697839"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "창천교회",
+    "roadNm": "연세로38"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "basic_info": {
+      "faclLat": "37.5591593273803",
+      "faclLng": "126.937685697839",
+      "faclNm": "창천교회",
+      "lcMnad": "서울특별시 서대문구 연세로38"
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true
+      },
+      "parking": {
+        "available": false
+      },
+      "restroom": {
+        "available": false
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "final_accessibility_score": 7,
+    "recommendations": [
+      "장애인 화장실 설치를 검토해 볼 것",
+      "엘리베이터 설치 여부를 확인하고 필요시 설치 고려",
+      "유도 및 안내 설비 설치로 접근성 보완"
+    ],
+    "observations": [
+      "외부에서 건물 내부로 직접 접근 가능한 출입구 있음",
+      "계단이나 높이 차이 없이 접근 가능",
+      "장애인 전용 주차 구역 마련되어 있음"
+    ]
+  }
+}

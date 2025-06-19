@@ -1,0 +1,88 @@
+{
+  "image_path": "data/imagedata/마이시크릿메이트.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/마이시크릿메이트_overlay_20250607_081935.png",
+  "kakao_mapping": {
+    "place_id": "17358576",
+    "place_name": "마이시크릿메이트",
+    "coordinates": {
+      "lat": 37.5582371543398,
+      "lng": 126.93906168635
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "마이시크릿메이트",
+    "roadNm": "연세로4길_47"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 21378,
+        "ratio": 0.835078125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9999298344092058,
+      "sidewalk_detection": 0.9713385826771653,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "has_railing": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 8,
+    "recommended_access_score": 8,
+    "final_accessibility_score": 8,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (각 계단 10-15cm)",
+    "stair_severity_assessment": "경미한 수준의 계단입니다. 2단의 낮은 계단으로 구성되어 있으며, 휠체어 사용자가 혼자서는 접근이 어렵지만 동행인 1명의 도움으로 충분히 극복 가능한 수준입니다.",
+    "stair_detection_confidence": "낮음",
+    "additional_obstacles_impact": [
+      "보도에서 건물 입구까지 직접 연결되는 경사로가 없음",
+      "안전 손잡이는 설치되어 있으나 휠체어 접근성에는 제한적 도움"
+    ],
+    "confidence_level": "low",
+    "alternative_route": false,
+    "alternative_route_description": "이미지에서 확인 가능한 대체 경로나 경사로가 보이지 않습니다",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태에서는 독립적 접근이 어려움",
+        "건물 관리자에게 휠체어 접근 가능 경로 문의 필요",
+        "방문 전 사전 연락하여 지원 요청 권장"
+      ],
+      "for_assisted": [
+        "동행인 1명과 함께 방문 권장",
+        "계단이 낮아 동행인의 도움으로 접근 가능",
+        "안전을 위해 천천히 접근할 것을 권장"
+      ],
+      "facility_improvements": [
+        "휠체어 경사로 설치 필요",
+        "계단 옆 이동식 경사판 비치 권장",
+        "휠체어 접근 가능 표시 및 안내 필요"
+      ]
+    },
+    "observations": [
+      "건물 입구 앞 2단의 낮은 계단 존재",
+      "보도는 평탄하게 연결되어 있음",
+      "입구 문은 충분한 너비로 보임",
+      "안전 손잡이가 설치되어 있음"
+    ],
+    "noise_filtering_summary": "검출 신뢰도가 낮아(0.00) 이미지 육안 분석을 우선하였으며, 실제로 2단의 계단이 확인됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:20:08.163900"
+}

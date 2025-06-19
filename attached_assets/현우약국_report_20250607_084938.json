@@ -1,0 +1,85 @@
+{
+  "image_path": "data/imagedata/현우약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/현우약국_overlay_20250607_084938.png",
+  "kakao_mapping": {
+    "place_id": "13510295",
+    "place_name": "현우약국",
+    "coordinates": {
+      "lat": 37.5583362186341,
+      "lng": 126.936748253264
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "현우약국",
+    "roadNm": "연세로_29-1"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 16657,
+        "ratio": 0.6506640625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9698024854415561,
+      "sidewalk_detection": 0.9998841251448436,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지와 검출 결과 모두에서 계단이 확인되지 않음. 평지 접근 가능한 입구로 판단됨",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 앞 보도가 평탄하게 조성되어 있어 휠체어 접근에 장애물 없음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "주 출입구가 이미 평지 접근 가능하여 대체 경로 불필요",
+    "recommendations": {
+      "for_independent": [
+        "입구까지 평탄한 보도를 통해 안전하게 접근 가능",
+        "출입구 앞 충분한 회전 공간 확보됨",
+        "날씨가 좋지 않을 때는 보도의 미끄러움 주의"
+      ],
+      "for_assisted": [
+        "독립 접근이 충분히 가능하나, 필요시 문 개폐 보조",
+        "실내 진입 후 안내가 필요할 수 있음"
+      ],
+      "facility_improvements": [
+        "출입구에 자동문 설치 고려",
+        "야간 조명 강화로 시인성 개선",
+        "우천 시를 대비한 차양 설치 검토"
+      ]
+    },
+    "observations": [
+      "평지에 위치한 상가 건물로 계단 없이 접근 가능",
+      "보도와 입구가 동일 평면에 위치",
+      "입구 주변 공간이 넓어 휠체어 회전 용이",
+      "건물 검출 신뢰도(0.97)와 보도 검출 신뢰도(1.00)가 매우 높음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 노이즈 없음. 평지 접근 건물로 확인됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:50:04.981764"
+}
