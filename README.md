@@ -126,7 +126,7 @@ If you want to run the project locally, follow the instructions below.
 
 ```bash
 git clone https://github.com/KSJcompany/TFI_CAMPUS_YONSEI_25Spring_AbleMap-1.git
-cd TFI_CAMPUS_YONSEI_25Spring_AbleMap-1
+cd TFI_CAMPUS_YONSEI_25Spring_AbleMap
 ```
 
 ---
