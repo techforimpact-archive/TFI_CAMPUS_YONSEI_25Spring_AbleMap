@@ -131,28 +131,44 @@ cd TFI_CAMPUS_YONSEI_25Spring_AbleMap
 
 ---
 
-### 🚀 Running the Web Service (AbleMap)
+### 🚀 Running the Web Service Locally (AbleMap)
 
-The web service source code is located inside the `AbleMap/` directory.
+The project is structured with both a Python environment and a TypeScript server.
+Follow these steps to install dependencies and run the project:
 
 1. Install dependencies:
 
 ```bash
 cd AbleMap
+
+```
+
+2. Install Python dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-2. Run the development server:
-
-```bash
-python manage.py runserver
-```
-
-3. Open your web browser and go to:
+3. Move into the `server` directory and install Node.js dependencies:
 
 ```
-http://127.0.0.1:8000
+cd server
+npm install
 ```
+
+4. Start the backend server:
+**Option 1: Development mode using ts-node**
+```
+npx ts-node index.ts
+```
+**Option 2: Production build and run**
+```
+npx tsc
+node dist/index.js
+```
+
+> `index.ts` is the main entry point of the backend TypeScript server.  
+> Make sure TypeScript (`tsc`) is available via `npm install -g typescript` if needed.
 
 ---
 
