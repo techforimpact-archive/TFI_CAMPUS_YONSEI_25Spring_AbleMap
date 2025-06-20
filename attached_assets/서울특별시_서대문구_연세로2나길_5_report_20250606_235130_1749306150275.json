@@ -1,0 +1,108 @@
+{
+  "kakao_mapping": {
+    "place_id": "1663246455",
+    "place_name": "호텔밀하우스",
+    "coordinates": {
+      "lat": "37.5563657335911",
+      "lng": "126.937928859997"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "호텔밀하우스",
+    "roadNm": "연세로2나길_5"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 3,
+        "ratio": 0.0001171875,
+        "estimated_size": "very small"
+      },
+      "building": {
+        "pixel_count": 21196,
+        "ratio": 0.82796875
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20150402",
+      "faclInfId": "20155827700",
+      "faclLat": "0",
+      "faclLng": "0",
+      "faclNm": "호텔 밀 하우스",
+      "faclTyCd": "일반숙박시설",
+      "lcMnad": "서울특별시 서대문구 연세로2나길 5",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011600-1-00290056"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": false,
+        "features": []
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 8,
+    "internal_accessibility_score": 3,
+    "final_accessibility_score": 5,
+    "stairs_count": "2-3개의 낮은 계단",
+    "stairs_height": "약 30-45cm (각 계단 약 15cm 높이)",
+    "stair_detection_confidence": "높음",
+    "alternative_route": false,
+    "alternative_route_description": "이미지에서 경사로나 대체 진입로는 확인되지 않음",
+    "recommendations": [
+      "휠체어 이용자를 위한 이동식 경사로 설치 권장",
+      "장애인 전용 주차구역 마련 필요",
+      "장애인 화장실 설치가 시급함",
+      "엘리베이터 설치 또는 장애인 이용 가능 객실을 1층에 배치",
+      "시각장애인을 위한 점자블록 및 음성안내 시스템 도입"
+    ],
+    "observations": [
+      "주출입구에 2-3개의 계단이 있으나 난간이 설치되어 있음",
+      "출입문은 충분한 너비로 보이며 자동문으로 추정됨",
+      "보도에서 출입구까지 평탄한 접근로가 있으나 계단이 장벽이 됨",
+      "호텔임에도 장애인 편의시설이 매우 부족한 상태",
+      "주출입구 높이차이 제거가 표시되어 있으나 실제로는 계단이 존재함"
+    ],
+    "noise_filtering_summary": "세그멘테이션에서 감지된 계단 픽셀(3개, 0.01%)은 실제 계단 규모에 비해 과소 검출되었으나, 이미지 분석 결과 명확히 2-3개의 계단이 확인됨. 난간이 있는 것으로 보아 안전성은 일부 확보되어 있음"
+  },
+  "timestamp": "2025-06-06T23:52:02.702121"
+}

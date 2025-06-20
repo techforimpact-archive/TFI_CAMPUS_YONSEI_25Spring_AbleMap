@@ -1,0 +1,89 @@
+{
+  "image_path": "data/imagedata/240H.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/240H_overlay_20250607_080349.png",
+  "kakao_mapping": {
+    "place_id": "341724032",
+    "place_name": "240H",
+    "coordinates": {
+      "lat": 37.5586315162685,
+      "lng": 126.935491612933
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "240H",
+    "roadNm": "연세로9길_24"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 12081,
+        "ratio": 0.4719140625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 1.0,
+      "sidewalk_detection": 0.772239263803681,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "계단이 감지되지 않았으며, 입구가 도로면과 거의 동일한 높이에 위치",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 앞 빨간 의자: 이동 가능한 장애물로 -0.5점",
+      "안내 표지판들: 충분한 여유 공간이 있어 영향 미미 -0.2점",
+      "전반적으로 깨끗하고 정리된 입구 공간"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 완전히 평탄하고 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "입구 앞 의자를 한쪽으로 치워두면 더 넓은 접근 공간 확보 가능",
+        "녹색 바닥재가 미끄러울 수 있으니 우천시 주의 필요",
+        "충분한 회전 공간이 있어 독립적 접근에 문제없음"
+      ],
+      "for_assisted": [
+        "동행인이 있다면 의자 이동이 즉시 가능",
+        "입구 문 개폐시 도움을 받으면 더욱 편리",
+        "특별한 주의사항 없음"
+      ],
+      "facility_improvements": [
+        "입구 앞 고정식 경사로 표시 설치 권장",
+        "자동문 설치시 접근성 극대화 가능",
+        "입구 앞 의자를 고정식 벤치로 교체하여 통행로 확보"
+      ]
+    },
+    "observations": [
+      "평탄한 입구로 계단이 전혀 없음",
+      "보도와 입구 사이 단차가 거의 없음",
+      "넓은 입구 공간으로 휠체어 회전 가능",
+      "녹색 바닥재로 포장되어 있으나 평탄함",
+      "유리문으로 내부 시야 확보 가능"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 명확히 확인. 건물 검출은 정상적으로 이루어졌으며(신뢰도 1.00), 보도 검출도 양호함(0.77). 실제 이미지 분석 결과와 일치하는 평탄한 접근 환경 확인",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:04:24.616635"
+}

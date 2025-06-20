@@ -1,0 +1,94 @@
+{
+  "image_path": "data/imagedata/유자유_김치떡볶이_신촌점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/유자유_김치떡볶이_신촌점_overlay_20250607_083906.png",
+  "kakao_mapping": {
+    "place_id": "104532017",
+    "place_name": "유자유 김치떡볶이 신촌점",
+    "coordinates": {
+      "lat": 37.5590255998908,
+      "lng": 126.935633878417
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "유자유_김치떡볶이_신촌점",
+    "roadNm": "연세로11길_22"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 80,
+        "ratio": 0.003125,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 17670,
+        "ratio": 0.690234375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.4895833333333333,
+      "door_detection": 0.0,
+      "building_detection": 0.9969439728353141,
+      "sidewalk_detection": 0.957605669450772,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "입구 앞에 매우 낮은 단차 1개가 있으나, 휠체어 사용자가 약간의 도움으로 쉽게 극복 가능한 수준입니다. 경사가 완만하고 높이가 낮아 실질적인 장애요소로 보기 어렵습니다.",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "입간판(A자 보드): 이동 가능한 장애물로 필요시 쉽게 이동 가능 (-0.2점)",
+      "메뉴판 스탠드: 오른쪽에 위치하여 통행에 큰 영향 없음 (-0.1점)"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 대체 경로는 보이지 않으나, 현재 입구로 충분히 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "단차가 낮아 전동휠체어는 독립 진입 가능",
+        "수동휠체어는 약간의 기술이 필요할 수 있음",
+        "입구 앞 공간이 넓어 회전 및 접근이 용이함"
+      ],
+      "for_assisted": [
+        "동행인 1명의 가벼운 도움으로 안전하게 진입 가능",
+        "입간판을 미리 이동시켜 더 넓은 통로 확보 권장"
+      ],
+      "facility_improvements": [
+        "작은 경사판 설치로 완전한 무단차 진입 가능",
+        "입구 단차 부분에 시각적 표시 추가 권장",
+        "이동식 경사로 비치 고려"
+      ]
+    },
+    "observations": [
+      "입구가 자동문으로 보여 문 개폐는 용이할 것으로 예상",
+      "보도와 입구 사이 공간이 평탄하고 넓음",
+      "점자블록이 설치되어 있어 시각장애인 접근성도 고려됨",
+      "전체적으로 접근성이 양호한 편"
+    ],
+    "noise_filtering_summary": "검출된 계단은 실제로는 입구의 작은 단차로 확인되며, 검출 신뢰도가 0.49로 중간 수준이므로 이미지 맥락을 고려하여 경미한 장애물로 평가",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:39:39.054845"
+}

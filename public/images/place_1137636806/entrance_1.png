@@ -1,0 +1,87 @@
+{
+  "image_path": "data/imagedata/맑은약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/맑은약국_overlay_20250607_082010.png",
+  "kakao_mapping": {
+    "place_id": "1137636806",
+    "place_name": "맑은약국",
+    "coordinates": {
+      "lat": 37.555654725645,
+      "lng": 126.937870146746
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "맑은약국",
+    "roadNm": "신촌로_107"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 14558,
+        "ratio": 0.568671875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9624948481934332,
+      "sidewalk_detection": 0.9854094076655052,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지에서 계단이 감지되지 않았으며, 건물 입구는 평지에서 직접 접근 가능한 구조로 보입니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "나무: 보도에 규칙적으로 배치되어 있으나 충분한 통행 공간 확보",
+      "자전거: 보도에 주차되어 있으나 우회 가능한 공간 존재"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "평지 접근이 가능하여 대체 경로 불필요",
+    "recommendations": {
+      "for_independent": [
+        "보도의 평탄성이 양호하여 휠체어 단독 이동 가능",
+        "입구 전면 공간이 넓어 회전 및 접근이 용이함",
+        "자전거 주차 구역을 피해 충분한 공간으로 접근 권장"
+      ],
+      "for_assisted": [
+        "동행인과 함께할 경우 더욱 안전한 이동 가능",
+        "필요시 자전거 이동 등의 도움 제공 가능"
+      ],
+      "facility_improvements": [
+        "자전거 전용 주차 구역 설치로 보행로 확보",
+        "시각장애인을 위한 점자블록 설치 권장",
+        "입구 자동문 설치시 접근성 더욱 향상"
+      ]
+    },
+    "observations": [
+      "건물 1층 상가 입구는 보도와 동일한 높이로 설계됨",
+      "넓은 보도폭으로 휠체어 통행에 충분한 공간 확보",
+      "가로수가 규칙적으로 배치되어 있으나 통행에 지장 없음",
+      "전면 유리문으로 시야 확보가 양호함",
+      "보도 상태가 평탄하고 균열이나 단차가 관찰되지 않음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확인. 건물 및 보도 검출 신뢰도가 높아(0.96, 0.99) 평지 접근 환경으로 판단",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:20:43.212372"
+}

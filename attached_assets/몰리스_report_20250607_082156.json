@@ -1,0 +1,87 @@
+{
+  "image_path": "data/imagedata/몰리스.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/몰리스_overlay_20250607_082156.png",
+  "kakao_mapping": {
+    "place_id": "26533401",
+    "place_name": "몰리스",
+    "coordinates": {
+      "lat": 37.5569576742918,
+      "lng": 126.93440226923
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "몰리스",
+    "roadNm": "연세로5다길_22-7"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 13731,
+        "ratio": 0.5363671875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9999635860461729,
+      "sidewalk_detection": 0.9500334784064279,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "has_railing": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "검출된 계단이 없으며, 이미지에서도 입구에 계단이 확인되지 않음",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "차량 주차로 인한 경미한 접근 경로 제약 (-0.5점)",
+      "보행자 통행으로 인한 일시적 장애 (-0.2점)"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "평탄한 보도를 통한 직접 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "보도에서 직접 평탄하게 진입 가능",
+        "입구 앞 공간이 충분하여 휠체어 회전 가능",
+        "주차 차량을 피해 접근 필요"
+      ],
+      "for_assisted": [
+        "동행인이 있어도 특별한 도움 불필요",
+        "보행자가 많을 경우 경로 안내 도움"
+      ],
+      "facility_improvements": [
+        "전용 휠체어 접근 구역 표시 권장",
+        "입구 앞 불법 주차 방지 조치"
+      ]
+    },
+    "observations": [
+      "MOLLIS 카페 입구가 보도와 같은 높이에 위치",
+      "계단 없이 평탄한 접근 가능",
+      "보도 블록이 잘 정비되어 있음",
+      "입구 문이 충분히 넓어 보임",
+      "주변에 경사로나 계단이 없음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확인. 건물 검출은 정확하며(신뢰도 1.00), 보도 검출도 높은 신뢰도(0.95)로 평탄한 접근 환경 확인",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:22:28.754949"
+}

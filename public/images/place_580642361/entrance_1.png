@@ -1,0 +1,87 @@
+{
+  "image_path": "data/imagedata/미도매운향솥.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/미도매운향솥_overlay_20250607_082231.png",
+  "kakao_mapping": {
+    "place_id": "580642361",
+    "place_name": "미도매운향솥",
+    "coordinates": {
+      "lat": 37.5588376207857,
+      "lng": 126.935411870786
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "미도매운향솥",
+    "roadNm": "연세로11길_25"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 14097,
+        "ratio": 0.5506640625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 1.0,
+      "sidewalk_detection": 0.9574944071588367,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 9.5,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지와 검출 결과 모두에서 계단이 확인되지 않음. 건물 입구가 도로면과 같은 높이에 위치해 있어 단차가 없는 평면 접근 가능",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "자전거 1대: 입구 우측에 위치하나 충분한 통행 공간 확보로 영향 미미 (-0.5점)",
+      "쓰레기봉투: 보도 우측에 위치하여 직접적인 접근 경로에 영향 없음 (-0.2점)"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 완전히 평면 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "보도에서 직접 진입 가능하여 특별한 주의사항 없음",
+        "자전거 주변 통행 시 약간의 주의 필요",
+        "입구 문턱 확인 후 진입 권장"
+      ],
+      "for_assisted": [
+        "동행인이 자전거 위치 안내하면 더욱 안전한 진입 가능",
+        "입구 문 개방 시 도움 제공 가능"
+      ],
+      "facility_improvements": [
+        "자전거 거치대 설치로 보도 공간 확보",
+        "입구 앞 점자블록 설치 권장",
+        "자동문 설치 시 독립 접근성 향상"
+      ]
+    },
+    "observations": [
+      "마라탕 음식점으로 1층 상가 위치",
+      "보도와 건물 입구 사이 단차 없음",
+      "입구 앞 충분한 회전 공간 확보",
+      "보도 상태 양호하며 점자블록 설치됨",
+      "건물 전면이 완전히 개방되어 있어 접근성 우수"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단 없음이 확실함. 건물 검출 신뢰도 1.00, 보도 검출 신뢰도 0.96으로 매우 높아 평면 접근 환경이 명확히 확인됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:23:06.889841"
+}

@@ -1,0 +1,92 @@
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+imageUrl: 'user_images/1748897396917_06zs79nxy.png',
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+uploadedAt: 2025-06-02T20:49:56.935Z
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+}
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+✅ 데이터베이스 저장 완료: {
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+id: 21,
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+poiId: '1302691939',
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+placeName: '경성양꼬치 신촌직영점',
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+username: '황수현',
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+imageUrl: 'user_images/1748897396917_06zs79nxy.png',
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+uploadedAt: 2025-06-02T20:49:56.935Z
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+}
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+🎉 업로드 완료: 경성양꼬치 신촌직영점 - 황수현 - 1748897396917_06zs79nxy.png
+2025-06-03 05:49:56.95
+9ce6aee7
+User
+8:49:56 PM [express] POST /api/user-images/upload 201 in 320ms :: {"message":"이미지가 성공적으로 업로드되었습니다.",…
+2025-06-03 05:49:57.17
+9ce6aee7
+User
+🔍 getPlaceByKakaoId 호출됨: 1302691939
+2025-06-03 05:49:57.20
+9ce6aee7
+User
+📊 getPlaceByKakaoId SQL 결과: 0 개
+2025-06-03 05:49:57.20
+9ce6aee7
+User
+❌ 카카오 ID로 장소를 찾을 수 없음: 1302691939
+2025-06-03 05:49:57.22
+9ce6aee7
+User
+📁 카카오 POI 1302691939의 이미지 폴더가 없습니다: /home/runner/workspace/public/images/poi_images/1302691939
+2025-06-03 05:49:57.22
+9ce6aee7
+User
+📸 장소 1302691939의 총 이미지 수: 1개
+2025-06-03 05:49:57.22
+9ce6aee7
+User
+8:49:57 PM [express] GET /api/places/1302691939/images 200 in 72ms :: [{"id":"user_21","place_id":nu…
+2025-06-03 05:49:57.30
+9ce6aee7
+User
+8:49:57 PM [express] GET /api/auth/kakao/user 304 in 329ms :: {"id":1,"nickname":"황수현","profile_imag…
+2025-06-03 05:49:58.22
+9ce6aee7
+User
+8:49:58 PM [express] GET /api/auth/kakao/user 304 in 257ms :: {"id":1,"nickname":"황수현","profile_imag…
+2025-06-03 05:49:59.22
+9ce6aee7
+User
+8:49:59 PM [express] GET /api/auth/kakao/user 304 in 257ms :: {"id":1,"nickname":"황수현","profile_imag…
+2025-06-03 05:50:00.20
+9ce6aee7
+User
+8:50:00 PM [express] GET /api/auth/

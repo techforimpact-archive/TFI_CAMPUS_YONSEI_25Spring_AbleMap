@@ -1,0 +1,96 @@
+{
+  "image_path": "data/imagedata/아소비바.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/아소비바_overlay_20250607_083538.png",
+  "kakao_mapping": {
+    "place_id": "1602552761",
+    "place_name": "아소비바",
+    "coordinates": {
+      "lat": 37.5588691806342,
+      "lng": 126.935292892924
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "아소비바",
+    "roadNm": "연세로11길_27"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 468,
+        "ratio": 0.01828125,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 16654,
+        "ratio": 0.650546875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.9090909090909092,
+      "door_detection": 0.0,
+      "building_detection": 0.9999699771826589,
+      "sidewalk_detection": 0.7590415913200723,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "입구 앞에 1단의 낮은 계단이 존재합니다. 경미한 수준(mild)으로 분류되며, 휠체어 사용자가 혼자서는 접근이 어렵지만 동행인의 도움이 있다면 쉽게 극복 가능한 수준입니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 우측의 안내 표지판: 이동 가능한 장애물로 접근 경로에 약간의 영향 (-0.2점)",
+      "입구 전면 공간이 다소 협소하여 휠체어 회전 공간 제한적"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "이미지에서 확인되는 대체 경로는 없으며, 정면 입구가 유일한 접근로로 보입니다.",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태로는 독립적 접근이 어려우므로 사전에 동행인 동반을 권장",
+        "휠체어 사용자 방문 시 미리 연락하여 임시 경사판 설치 요청 고려"
+      ],
+      "for_assisted": [
+        "1명의 동행인이 있다면 안전하게 접근 가능",
+        "입구 앞 계단 통과 시 휠체어 앞바퀴를 들어 올려 진입",
+        "표지판 위치 조정 요청하여 더 넓은 접근 공간 확보"
+      ],
+      "facility_improvements": [
+        "입구 앞 1단 계단 제거 또는 영구적 경사로 설치 필요",
+        "최소 1:12 경사의 이동식 경사판 구비 권장",
+        "입구 전면 공간 확대하여 휠체어 회전 공간 확보",
+        "접근성 안내 표지 설치로 사전 정보 제공"
+      ]
+    },
+    "observations": [
+      "유리 전면 구조로 내부 시야 확보 양호",
+      "입구 너비는 휠체어 통행에 적절해 보임",
+      "보도와 건물 사이 단차가 1단 존재",
+      "전반적으로 깨끗하고 정돈된 입구 환경",
+      "계단 검출 신뢰도 0.91로 매우 높음"
+    ],
+    "noise_filtering_summary": "segmentation 이미지에서 명확하게 1단의 계단이 확인되며, 노이즈 없이 정확한 검출 결과를 보임. 픽셀 수(468)와 비율(1.8%)을 고려할 때 입구 전면의 낮은 단차로 판단됨.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:36:13.393938"
+}

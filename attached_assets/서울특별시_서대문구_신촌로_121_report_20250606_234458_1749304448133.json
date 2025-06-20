@@ -1,0 +1,113 @@
+{
+  "kakao_mapping": {
+    "place_id": "8375653",
+    "place_name": "버거킹 신촌1점",
+    "coordinates": {
+      "lat": "37.5562057965146",
+      "lng": "126.939295914138"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "버거킹 신촌1점",
+    "roadNm": "신촌로_121"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 1,
+        "ratio": 3.90625e-05,
+        "estimated_size": "very small"
+      },
+      "building": {
+        "pixel_count": 14530,
+        "ratio": 0.567578125
+      },
+      "railing_to_stairs_distance": 46.52956049652737
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "has_railing": true,
+    "has_stairs_railing": true,
+    "accessibility_score": 8
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20011207",
+      "faclInfId": "20155825537",
+      "faclLat": "0",
+      "faclLng": "0",
+      "faclNm": "아남오피스텔",
+      "faclTyCd": "금융업소 등 일반업무시설",
+      "lcMnad": "서울특별시 서대문구 신촌로 121",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011600-3-00200041"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "승강기",
+        "장애인전용주차구역",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": true,
+        "features": [
+          "장애인전용주차구역"
+        ]
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 8,
+    "internal_accessibility_score": 7,
+    "final_accessibility_score": 7,
+    "stairs_count": "실제 계단 없음 (오탐지)",
+    "stairs_height": "해당 없음",
+    "stair_detection_confidence": "낮음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구 높이차이가 제거되어 있고, 평탄한 접근로가 확보되어 있어 휠체어 접근이 원활함",
+    "recommendations": [
+      "장애인 화장실 설치가 시급히 필요합니다",
+      "엘리베이터 정보가 없으나 오피스텔 특성상 승강기가 있을 것으로 추정되므로 정확한 정보 업데이트 필요",
+      "시각장애인을 위한 유도 및 안내 설비 설치 권장",
+      "건물 1층 상가 부분의 접근성도 함께 개선 필요"
+    ],
+    "observations": [
+      "버거킹 등 1층 상가 시설이 위치한 복합 건물",
+      "보도와 건물 입구 사이가 평탄하게 연결되어 있음",
+      "장애인 주차구역이 확보되어 있음",
+      "주출입구 접근성은 양호한 편"
+    ],
+    "noise_filtering_summary": "매우 작은 픽셀 수(1픽셀, 0.0039%)로 검출된 계단은 실제 계단이 아닌 노이즈로 판단됨. 이미지상 평탄한 보도만 확인됨"
+  },
+  "timestamp": "2025-06-06T23:45:39.439540"
+}

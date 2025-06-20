@@ -1,0 +1,95 @@
+{
+  "image_path": "data/imagedata/광장약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/광장약국_overlay_20250607_081446.png",
+  "kakao_mapping": {
+    "place_id": "1804716056",
+    "place_name": "광장약국",
+    "coordinates": {
+      "lat": 37.5606085790517,
+      "lng": 126.941376686304
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "광장약국",
+    "roadNm": "성산로_494-30"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 55,
+        "ratio": 0.0021484375,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 19946,
+        "ratio": 0.779140625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.4546440972222222,
+      "door_detection": 0.0,
+      "building_detection": 0.9996741201243358,
+      "sidewalk_detection": 0.849894291754757,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "경미한 수준으로, 건물 입구에 1단의 낮은 단차만 존재. 휠체어 사용자가 혼자서도 어느 정도 극복 가능한 수준이나, 안전을 위해 도움이 있으면 더 좋음",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "계단 외에는 특별한 장애물이 없음. 입구 앞 공간이 넓어 휠체어 회전 및 접근이 용이함"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 대체 경로는 보이지 않으나, 단차가 낮아 현재 경로로도 충분히 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "낮은 단차이므로 숙련된 휠체어 사용자는 혼자서도 접근 가능",
+        "처음 방문시에는 안전을 위해 미리 연락하여 도움 요청 권장",
+        "입구 앞 평탄한 공간을 활용하여 충분한 가속 거리 확보"
+      ],
+      "for_assisted": [
+        "동행인 1명의 가벼운 도움으로 안전하게 진입 가능",
+        "단차 극복 시 휠체어 뒤쪽을 살짝 들어주는 정도의 도움이면 충분",
+        "약국 직원에게 도움 요청 가능"
+      ],
+      "facility_improvements": [
+        "작은 휴대용 경사로 설치로 완전한 무장애 접근 가능",
+        "입구 단차 부분에 시각적 표시 추가로 안전성 향상",
+        "장기적으로는 영구 경사로 설치 검토"
+      ]
+    },
+    "observations": [
+      "약국 입구에 1단의 낮은 단차만 존재",
+      "입구 앞 공간이 넓어 휠체어 회전 및 접근 용이",
+      "보도와 건물 사이 연결이 양호",
+      "입구 문이 유리문으로 폭이 충분해 보임",
+      "전반적으로 접근성이 양호한 편"
+    ],
+    "noise_filtering_summary": "검출 신뢰도가 중간 수준(0.45)이지만, 이미지 분석 결과 실제로는 1단의 낮은 단차만 존재하는 것으로 확인. 개선된 분석의 'mild' 평가와 일치하며, 노이즈로 인한 과대 검출은 없는 것으로 판단됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:15:15.913842"
+}

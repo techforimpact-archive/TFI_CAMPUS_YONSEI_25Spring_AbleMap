@@ -1,0 +1,91 @@
+{
+  "image_path": "data/imagedata/백순대본가새막_신촌연대점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/백순대본가새막_신촌연대점_overlay_20250607_082422.png",
+  "kakao_mapping": {
+    "place_id": "959867372",
+    "place_name": "백순대본가새막 신촌연대점",
+    "coordinates": {
+      "lat": 37.5590361608401,
+      "lng": 126.936167280868
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "백순대본가새막_신촌연대점",
+    "roadNm": "연세로11길_12"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 16,
+        "ratio": 0.000625,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 16020,
+        "ratio": 0.62578125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.43125,
+      "door_detection": 0.0,
+      "building_detection": 0.9970349563046192,
+      "sidewalk_detection": 0.7682129051442165,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단이 없거나 매우 낮은 단차",
+    "stair_severity_assessment": "이미지에서 명확한 계단이 관찰되지 않음. 검출된 'mild' 수준의 계단은 입구 앞 작은 단차나 보도블록의 경계로 추정됨",
+    "stair_detection_confidence": "낮음",
+    "additional_obstacles_impact": [
+      "입간판이 있으나 보도 측면에 위치하여 통행에 큰 지장 없음"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "평탄한 보도로 직접 접근 가능하여 대체 경로 불필요",
+    "recommendations": {
+      "for_independent": [
+        "보도의 점자블록을 따라 안전하게 이동",
+        "입구 앞 입간판 주의하여 통행"
+      ],
+      "for_assisted": [
+        "특별한 주의사항 없음",
+        "일반적인 상가 진입과 동일"
+      ],
+      "facility_improvements": [
+        "입구 앞 단차가 있다면 완전히 제거하여 무단차 진입 확보",
+        "입간판 위치를 벽면 가까이 조정하여 통행 공간 확대"
+      ]
+    },
+    "observations": [
+      "평탄한 보도블록과 건물 입구가 잘 연결됨",
+      "점자블록이 설치되어 있어 시각장애인 안내 가능",
+      "입구 너비가 충분하여 휠체어 진입 가능",
+      "검출된 계단은 노이즈이거나 매우 작은 단차로 판단됨"
+    ],
+    "noise_filtering_summary": "검출 신뢰도 0.43으로 낮은 편이며, 픽셀 수(16)와 비율(0.000625)이 매우 작아 실제 계단이 아닌 노이즈나 작은 단차로 필터링됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:24:52.268897"
+}

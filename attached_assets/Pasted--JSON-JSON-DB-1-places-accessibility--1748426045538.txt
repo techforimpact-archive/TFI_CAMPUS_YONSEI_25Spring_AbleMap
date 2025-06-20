@@ -1,0 +1,67 @@
+네! JSON 파일과 데이터베이스 테이블 간의 매핑 정보를 체계적으로 정리해드리겠습니다.
+
+📋 JSON-DB 매핑 정보 가이드
+1. places_accessibility (메인 테이블)
+// JSON 경로 → DB 컬럼
+"kakao_mapping.place_id" → kakao_place_id (VARCHAR)
+"kakao_mapping.place_name" → place_name (VARCHAR)  
+"kakao_mapping.coordinates.lat" → latitude (DECIMAL)
+"kakao_mapping.coordinates.lng" → longitude (DECIMAL)
+2. location_details (위치 정보)
+// JSON 경로 → DB 컬럼
+"location_info.siDoNm" → sido_name (VARCHAR)
+"location_info.cggNm" → district_name (VARCHAR)
+"location_info.faclNm" → facility_name (VARCHAR)
+"location_info.roadNm" → road_name (VARCHAR)
+3. accessibility_scores (접근성 점수)
+// JSON 경로 → DB 컬럼
+"accessibility_info.has_stairs" → has_stairs (BOOLEAN)
+"accessibility_info.has_ramp" → has_ramp (BOOLEAN)
+"accessibility_info.entrance_accessible" → entrance_accessible (BOOLEAN)
+"accessibility_info.has_sidewalk" → has_sidewalk (BOOLEAN)
+"accessibility_info.has_building" → has_building (BOOLEAN)
+"llm_analysis.external_accessibility_score" → external_score (INTEGER)
+"llm_analysis.internal_accessibility_score" → internal_score (INTEGER)
+"llm_analysis.final_accessibility_score" → final_score (INTEGER)
+"llm_analysis.stairs_count" → stairs_count (INTEGER)
+"llm_analysis.stairs_height" → stairs_height (VARCHAR)
+4. facility_features (시설 특징 - 다중 레코드)
+// JSON 배열을 개별 레코드로 분할
+"facility_info.facility_features.evalInfo[]" → feature_name (VARCHAR)
+// 시설별 접근성 정보
+"facility_info.accessibility_details.entrance" → feature_type: 'entrance'
+"facility_info.accessibility_details.parking" → feature_type: 'parking'  
+"facility_info.accessibility_details.restroom" → feature_type: 'restroom'
+"facility_info.accessibility_details.elevator" → feature_type: 'elevator'
+5. accessibility_analysis (LLM 분석)
+// JSON 배열 → PostgreSQL ARRAY 타입
+"llm_analysis.recommendations[]" → recommendations (TEXT[])
+"llm_analysis.observations[]" → observations (TEXT[])
+"llm_analysis.improvement_suggestions[]" → improvement_suggestions (TEXT[])
+"llm_analysis.alternative_route" → alternative_route (BOOLEAN)
+"llm_analysis.alternative_route_description" → alternative_route_description (TEXT)
+"timestamp" → analysis_timestamp (TIMESTAMP)
+6. obstacles (장애물 정보)
+// 중첩 객체에서 추출
+"accessibility_info.obstacle_details.building.pixel_count" → pixel_count (INTEGER)
+"accessibility_info.obstacle_details.building.ratio" → ratio (DECIMAL)
+// 하드코딩: "building" → obstacle_type (VARCHAR)
+🔄 데이터 삽입 프로세스
+단계별 삽입 순서
+places_accessibility 먼저 삽입 → ID 반환받기
+반환된 ID를 place_id로 사용해서 나머지 테이블들에 삽입
+facility_features는 여러 레코드로 분할 삽입
+배열 데이터는 PostgreSQL ARRAY 형식으로 변환
+특별 처리 사항
+evalInfo 배열: 각 항목을 개별 레코드로 분할
+accessibility_details: 객체 키를 feature_type으로 사용
+timestamp: ISO 형식을 PostgreSQL TIMESTAMP로 변환
+좌표값: 문자열을 DECIMAL로 변환
+💡 활용 예시
+새로운 JSON 파일 처리 시:
+
+JSON 구조가 동일한지 확인
+매핑 테이블 참조해서 데이터 추출
+places_accessibility 삽입 후 ID 획득
+나머지 테이블들에 순차적으로 삽입
+이 매핑 정보를 바탕으로 다른 JSON 파일들도 체계적으로 데이터베이스에 저장할 수 있습니다! 어떤 JSON 파일을 추가로 처리해보실까요?

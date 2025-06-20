@@ -1,0 +1,85 @@
+{
+  "image_path": "data/imagedata/CU마포신촌로터리점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/CU마포신촌로터리점_overlay_20250607_080620.png",
+  "kakao_mapping": {
+    "place_id": "1011003181",
+    "place_name": "CU 마포신촌로터리점",
+    "coordinates": {
+      "lat": 37.5543277907154,
+      "lng": 126.936784234683
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "CU_마포신촌로터리점",
+    "roadNm": "백범로_4"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 17791,
+        "ratio": 0.6949609375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.999409813950874,
+      "sidewalk_detection": 0.7637002341920375,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 10,
+    "assisted_access_score": 10,
+    "recommended_access_score": 10,
+    "final_accessibility_score": 10,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지에서 계단이 전혀 관찰되지 않으며, 편의점 입구까지 평탄한 보도로 연결되어 있습니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "감지된 장애물 없음 - 건물 자체는 장애물이 아닌 목적지"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로가 필요하지 않음 - 직접 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "보도에서 직접 진입 가능",
+        "문 앞 공간이 충분하여 휠체어 회전 가능",
+        "평탄한 접근로 이용"
+      ],
+      "for_assisted": [
+        "동행인 도움 없이도 충분히 접근 가능",
+        "필요시 문 개폐 도움만 요청"
+      ],
+      "facility_improvements": [
+        "자동문 설치 시 접근성 더욱 향상",
+        "입구 전면 점자블록 설치 권장"
+      ]
+    },
+    "observations": [
+      "CU 편의점 1층 입구로 계단 없이 평탄한 접근",
+      "보도가 잘 정비되어 있음",
+      "입구 전면 공간이 충분함",
+      "문턱이 없거나 매우 낮아 보임",
+      "주변에 이동을 방해하는 장애물 없음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확인. 건물 검출은 정상적으로 이루어졌으며(신뢰도 1.00), 보도 검출도 양호함(0.76). 노이즈로 인한 오탐지 없음.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:06:51.483422"
+}

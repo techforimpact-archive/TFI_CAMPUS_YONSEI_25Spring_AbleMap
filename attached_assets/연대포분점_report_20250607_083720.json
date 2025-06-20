@@ -1,0 +1,86 @@
+{
+  "image_path": "data/imagedata/연대포분점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/연대포분점_overlay_20250607_083720.png",
+  "kakao_mapping": {
+    "place_id": "1114731898",
+    "place_name": "연대포분점",
+    "coordinates": {
+      "lat": 37.5584586308496,
+      "lng": 126.935851554504
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "연대포분점",
+    "roadNm": "연세로9길_17"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 15744,
+        "ratio": 0.615
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9999682418699187,
+      "sidewalk_detection": 1.0,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 9.5,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "이미지에서 계단이 감지되지 않았으며, 입구까지 평탄한 보도로 연결되어 있음",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "주차된 차량들이 있으나 보도와 분리되어 있어 접근에 영향 없음",
+      "입구 앞 공간이 충분히 확보되어 있음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 진입로가 완전히 접근 가능함",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태로 독립적 접근이 가능함",
+        "보도의 평탄성이 양호하여 안전한 이동 가능",
+        "입구 앞 회전 공간이 충분함"
+      ],
+      "for_assisted": [
+        "동행인이 있어도 특별한 도움이 필요하지 않음",
+        "평탄한 접근로로 안전하게 이동 가능"
+      ],
+      "facility_improvements": [
+        "현재 접근성이 우수하여 특별한 개선사항 없음",
+        "입구 표시를 더 명확히 하면 도움이 될 수 있음"
+      ]
+    },
+    "observations": [
+      "건물 앞 보도가 평탄하고 넓게 조성되어 있음",
+      "입구까지 계단이나 턱이 없는 평탄한 접근로",
+      "주차 공간과 보행로가 명확히 구분되어 있음",
+      "입구 앞에 충분한 회전 공간 확보",
+      "보도의 재질이 평탄하고 미끄럽지 않아 보임"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음이 확인됨. 건물과 보도가 명확히 감지되어 접근성 평가의 신뢰도가 높음",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:37:51.534167"
+}

@@ -1,0 +1,94 @@
+{
+  "image_path": "data/imagedata/위드팜신촌약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/위드팜신촌약국_overlay_20250607_083829.png",
+  "kakao_mapping": {
+    "place_id": "11518579",
+    "place_name": "위드팜신촌약국",
+    "coordinates": {
+      "lat": 37.5607282670759,
+      "lng": 126.94126714618
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "위드팜신촌약국",
+    "roadNm": "성산로_486"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 35,
+        "ratio": 0.0013671875,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 17307,
+        "ratio": 0.6760546875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.27669270833333337,
+      "door_detection": 0.0,
+      "building_detection": 0.9999422199110186,
+      "sidewalk_detection": 0.9402560455192034,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (1-2단의 낮은 계단)",
+    "stair_severity_assessment": "경미한 수준의 계단으로 약국 입구에 1-2단 정도의 낮은 단차가 있습니다. 휠체어 사용자가 혼자서는 접근이 어려울 수 있으나, 동행인의 도움이 있다면 비교적 쉽게 극복 가능한 수준입니다.",
+    "stair_detection_confidence": "낮음",
+    "additional_obstacles_impact": [
+      "건물 전면부가 대부분 차지하고 있으나 접근성에는 영향 없음",
+      "보도가 잘 정비되어 있어 휠체어 이동에 유리함",
+      "추가적인 이동 장애물은 관찰되지 않음"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "이미지에서 대체 경로는 확인되지 않으며, 정면 입구가 유일한 접근로로 보입니다.",
+    "recommendations": {
+      "for_independent": [
+        "낮은 단차이지만 혼자서는 접근이 어려울 수 있으므로 사전에 동행인 동반을 권장합니다",
+        "약국 방문 전 전화로 직원의 도움 가능 여부를 확인하는 것이 좋습니다"
+      ],
+      "for_assisted": [
+        "1-2명의 동행인이 있다면 안전하게 접근 가능합니다",
+        "계단이 낮아 동행인의 부담이 적습니다"
+      ],
+      "facility_improvements": [
+        "휴대용 경사로 설치로 독립적 접근성 크게 향상 가능",
+        "입구 단차 제거 또는 영구 경사로 설치 권장",
+        "자동문 설치로 휠체어 사용자의 편의성 증대"
+      ]
+    },
+    "observations": [
+      "부드롬 신촌약국 건물 전면부",
+      "보도가 평탄하고 넓어 휠체어 접근이 용이함",
+      "입구에 경미한 단차가 있으나 심각한 장애물은 아님",
+      "건물 전면에 충분한 회전 공간 확보"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.28로 낮아 이미지 전체 맥락을 중심으로 평가했습니다. 약국 입구의 일반적인 단차를 고려하여 경미한 수준의 계단으로 판단했습니다.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:39:03.848676"
+}

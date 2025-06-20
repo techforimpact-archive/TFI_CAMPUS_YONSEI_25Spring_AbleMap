@@ -1,0 +1,96 @@
+{
+  "image_path": "data/imagedata/더파이홀.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/더파이홀_overlay_20250607_081748.png",
+  "kakao_mapping": {
+    "place_id": "1011256721",
+    "place_name": "더파이홀",
+    "coordinates": {
+      "lat": 37.557045882794,
+      "lng": 126.935055781905
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "더파이홀",
+    "roadNm": "연세로5나길_20"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 611,
+        "ratio": 0.0238671875,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 19135,
+        "ratio": 0.7474609375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.8857323232323233,
+      "door_detection": 0.0,
+      "building_detection": 0.9977266788607264,
+      "sidewalk_detection": 0.9158699808795412,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (각 계단 10-15cm)",
+    "stair_severity_assessment": "경미한 수준의 계단으로, 입구 전면에 2단의 낮은 계단이 설치되어 있습니다. 계단 높이가 비교적 낮아 동행인의 도움이 있다면 충분히 극복 가능합니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "입구 앞 화분과 물품들이 일부 공간을 차지하나 통행에는 큰 지장 없음",
+      "보도와 건물 사이 단차가 명확히 존재",
+      "입구 문 너비는 휠체어 통행에 적절해 보임"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 경사로나 우회 경로가 보이지 않음",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태로는 독립적 접근이 어려움",
+        "이동식 경사로 지참 시 접근 가능성 향상",
+        "사전에 가게에 연락하여 도움 요청 권장"
+      ],
+      "for_assisted": [
+        "1-2명의 동행인과 함께 방문 권장",
+        "계단이 낮아 휠체어를 들어올리기 비교적 수월",
+        "입구 앞 물품 정리 후 접근하면 더욱 안전"
+      ],
+      "facility_improvements": [
+        "휴대용 경사로 설치로 접근성 크게 개선 가능",
+        "계단 옆 공간에 영구 경사로 설치 검토",
+        "입구 앞 물품 정리 및 통행로 확보"
+      ]
+    },
+    "observations": [
+      "전형적인 소규모 상가 건물의 계단 구조",
+      "보도가 잘 정비되어 있어 계단까지의 접근은 양호",
+      "계단 검출 신뢰도가 높아 정확한 평가 가능",
+      "입구 문이 유리문으로 시야 확보 양호"
+    ],
+    "noise_filtering_summary": "계단 검출이 명확하고 신뢰도가 높아 노이즈 필터링이 효과적으로 작동. 실제 2단의 계단이 정확히 식별되었으며, 건물 구조와 일치함.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:18:25.175611"
+}

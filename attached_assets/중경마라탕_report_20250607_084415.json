@@ -1,0 +1,84 @@
+{
+  "image_path": "data/imagedata/중경마라탕.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/중경마라탕_overlay_20250607_084415.png",
+  "kakao_mapping": {
+    "place_id": "1743190128",
+    "place_name": "중경마라탕",
+    "coordinates": {
+      "lat": 37.5588207663976,
+      "lng": 126.935897307674
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "중경마라탕",
+    "roadNm": "연세로11길_15"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 18000,
+        "ratio": 0.703125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9994722222222222,
+      "sidewalk_detection": 1.0,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음 - 평지 입구",
+    "stair_severity_assessment": "계단이 감지되지 않았으며, 입구가 도로면과 거의 같은 높이에 위치",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "화분 2개 - 입구 양옆에 배치되어 있으나 충분한 통행 공간 확보"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 주 출입구가 휠체어 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "입구 앞 검은색 매트가 미끄러울 수 있으니 주의 필요",
+        "화분 사이 공간으로 진입시 충분한 여유 공간 확인"
+      ],
+      "for_assisted": [
+        "특별한 도움 없이도 접근 가능",
+        "우천시 매트 미끄러움 주의 안내"
+      ],
+      "facility_improvements": [
+        "입구 매트를 미끄럼 방지 재질로 교체 권장",
+        "야간 조명 추가 설치로 시인성 향상"
+      ]
+    },
+    "observations": [
+      "1층 상가 입구가 보도와 동일한 높이에 위치",
+      "유리 자동문 또는 여닫이문으로 충분한 너비 확보",
+      "입구 앞 평탄한 보도 블록 설치",
+      "화분이 입구 양쪽에 배치되어 있으나 통행에 지장 없음",
+      "건물 전면에 광고판과 메뉴판이 설치되어 있으나 접근 경로 방해하지 않음"
+    ],
+    "noise_filtering_summary": "검출 신뢰도가 낮지만 이미지 육안 확인 결과 계단이 없는 평지 입구임이 명확함. 화분 등 장애물은 있으나 접근성에 큰 영향 없음",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:44:47.401735"
+}

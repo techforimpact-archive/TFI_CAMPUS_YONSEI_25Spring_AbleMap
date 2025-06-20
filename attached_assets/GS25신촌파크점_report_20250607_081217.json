@@ -1,0 +1,96 @@
+{
+  "image_path": "data/imagedata/GS25신촌파크점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/GS25신촌파크점_overlay_20250607_081217.png",
+  "kakao_mapping": {
+    "place_id": "21159141",
+    "place_name": "GS25 신촌파크점",
+    "coordinates": {
+      "lat": 37.5561574789073,
+      "lng": 126.938552510593
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "GS25_신촌파크점",
+    "roadNm": "연세로2길_30"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 724,
+        "ratio": 0.02828125,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 9699,
+        "ratio": 0.3788671875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.8428030303030303,
+      "door_detection": 0.0,
+      "building_detection": 0.9255077843076606,
+      "sidewalk_detection": 0.99830335934849,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 30-40cm (각 계단 15-20cm 높이)",
+    "stair_severity_assessment": "경미한 수준의 계단으로, 2단의 낮은 계단이 매장 입구 앞에 위치. 계단 너비는 충분하고 안정적인 구조를 보임",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "외부 냉장고가 보도 일부를 차지하고 있으나 통행에는 지장 없음",
+      "입구 문이 유리문으로 되어 있어 시야 확보는 양호함"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "별도의 경사로나 우회 경로는 보이지 않음",
+    "recommendations": {
+      "for_independent": [
+        "휠체어 사용자 혼자서는 2단 계단 극복이 매우 어려움",
+        "전동휠체어의 경우에도 계단 극복 불가능",
+        "사전에 매장에 연락하여 도움 요청 권장"
+      ],
+      "for_assisted": [
+        "1-2명의 동행인이 있다면 안전하게 접근 가능",
+        "계단이 낮아 동행인의 도움으로 비교적 쉽게 극복 가능",
+        "매장 직원에게 도움을 요청하는 것도 좋은 방법"
+      ],
+      "facility_improvements": [
+        "휴대용 경사로 설치로 접근성 크게 개선 가능",
+        "영구적인 경사로 설치 권장",
+        "계단 옆 손잡이 설치로 안전성 향상 필요"
+      ]
+    },
+    "observations": [
+      "GS25 편의점 입구에 2단의 계단 확인",
+      "계단 검출 신뢰도가 0.84로 높아 정확한 분석 가능",
+      "보도는 잘 정비되어 있으나 계단이 주요 장애물",
+      "매장 입구 너비는 충분해 보임",
+      "주변 보도 상태는 양호하여 계단만 극복하면 접근 가능"
+    ],
+    "noise_filtering_summary": "세그멘테이션 결과에서 계단 영역이 명확히 구분되어 있으며, 노이즈 없이 실제 계단 2단이 정확히 감지됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:12:53.505762"
+}

@@ -1,0 +1,48 @@
+{
+  "image_path": "data/imagedata/이디야커피_연세대점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/이디야커피_연세대점_overlay_20250607_083941.png",
+  "kakao_mapping": {
+    "place_id": "15522943",
+    "place_name": "이디야커피 연세대점",
+    "coordinates": {
+      "lat": 37.5588610117482,
+      "lng": 126.937523648298
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "이디야커피_연세대점",
+    "roadNm": "연세로12길_10"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 17852,
+        "ratio": 0.69734375
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9998599596683845,
+      "sidewalk_detection": 0.9204413472706156,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "error": "HTTP 오류: 529 - 529 Server Error:  for url: https://api.anthropic.com/v1/messages",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:39:57.508337"
+}

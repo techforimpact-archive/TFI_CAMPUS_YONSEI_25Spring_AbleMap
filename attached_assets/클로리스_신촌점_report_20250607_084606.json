@@ -1,0 +1,97 @@
+{
+  "image_path": "data/imagedata/클로리스_신촌점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/클로리스_신촌점_overlay_20250607_084606.png",
+  "kakao_mapping": {
+    "place_id": "8122805",
+    "place_name": "클로리스 신촌점",
+    "coordinates": {
+      "lat": 37.557750825842,
+      "lng": 126.938770878428
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "클로리스_신촌점",
+    "roadNm": "연세로4길_38"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 69,
+        "ratio": 0.0026953125,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 17097,
+        "ratio": 0.6678515625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.5268110795454546,
+      "door_detection": 0.0,
+      "building_detection": 0.9998537755161725,
+      "sidewalk_detection": 0.9784504874294511,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 10-15cm 정도의 낮은 단차",
+    "stair_severity_assessment": "건물 입구에 1단의 낮은 계단이 존재합니다. 검출된 계단의 픽셀 비율(0.27%)과 크기(very small)를 고려할 때, 이는 작은 단차로 판단됩니다. 경미한 수준의 장애물이지만 휠체어 사용자에게는 독립적 접근시 어려움을 줄 수 있습니다.",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "계단 외 특별한 장애물은 발견되지 않음",
+      "보도블록이 잘 정비되어 있어 이동에 유리함",
+      "입구 주변 공간이 충분해 회전 및 접근이 용이함"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "이미지에서 경사로나 대체 진입로는 확인되지 않습니다",
+    "recommendations": {
+      "for_independent": [
+        "낮은 단차이지만 휠체어로 혼자 넘기 어려울 수 있으니 주의 필요",
+        "전동휠체어의 경우 속도를 줄여 천천히 접근 시도",
+        "가능하다면 사전에 건물 관리자에게 문의하여 이동식 경사로 설치 요청"
+      ],
+      "for_assisted": [
+        "동행인 1명의 도움으로 쉽게 접근 가능",
+        "입구 앞 공간이 넓어 안전하게 도움받을 수 있음",
+        "단차가 낮아 큰 힘을 들이지 않고도 진입 가능"
+      ],
+      "facility_improvements": [
+        "작은 이동식 경사로 설치로 완전한 무장애 접근 가능",
+        "입구 단차 제거 또는 경사 처리",
+        "시각적 대비를 위한 단차 표시 추가"
+      ]
+    },
+    "observations": [
+      "CHLORIS TEA GARDEN 카페/레스토랑 건물",
+      "보도블록이 잘 정비되어 있고 평탄함",
+      "입구 앞 공간이 충분하여 휠체어 회전 가능",
+      "1단의 낮은 계단만 존재하여 동행 지원시 접근성 양호",
+      "건물 전면에 점자블록이 설치되어 있음"
+    ],
+    "noise_filtering_summary": "검출된 계단은 매우 작은 크기(픽셀 비율 0.27%)로, 실제로는 입구의 낮은 단차 1개로 판단됩니다. 다른 노이즈 요소는 발견되지 않았습니다.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:46:42.598414"
+}

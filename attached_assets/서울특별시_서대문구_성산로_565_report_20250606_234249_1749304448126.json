@@ -1,0 +1,105 @@
+{
+  "kakao_mapping": {
+    "place_id": "17127094",
+    "place_name": "스타벅스 연대동문점",
+    "coordinates": {
+      "lat": "37.5664179509332",
+      "lng": "126.946341059136"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "스타벅스 연대동문점",
+    "roadNm": "성산로_565"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 15301,
+        "ratio": 0.5976953125
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20100816",
+      "faclInfId": "20155824103",
+      "faclLat": "0",
+      "faclLng": "0",
+      "faclNm": "연세대학교 대신빌딩",
+      "faclTyCd": "금융업소 등 일반업무시설",
+      "lcMnad": "서울특별시 서대문구 성산로 565",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011300-1-01150000"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "승강기",
+        "장애인사용가능화장실",
+        "장애인전용주차구역",
+        "주출입구 높이차이 제거",
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": true,
+        "features": [
+          "장애인전용주차구역"
+        ]
+      },
+      "restroom": {
+        "available": true,
+        "features": [
+          "장애인사용가능화장실"
+        ]
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 10,
+    "internal_accessibility_score": 8,
+    "final_accessibility_score": 9,
+    "stairs_count": "0개 (계단 없음)",
+    "stairs_height": "해당 없음 - 평지 접근",
+    "stair_detection_confidence": "높음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구가 평지로 되어 있어 휠체어 및 보행 보조기구 사용자가 직접 접근 가능. 높이차이가 제거된 접근로 확보",
+    "recommendations": [
+      "유도 및 안내 설비 추가 설치로 시각장애인 접근성 향상 필요",
+      "장애인사용가능객실 정보 확인 및 추가 검토",
+      "현재의 우수한 평지 접근성 유지 관리 필요"
+    ],
+    "observations": [
+      "연세대학교 대신빌딩은 평지 접근이 가능한 현대적 건물",
+      "주출입구에 계단이 없어 휠체어 접근성이 매우 우수함",
+      "승강기, 장애인화장실, 장애인주차구역 등 핵심 편의시설 완비",
+      "넓은 보도와 평탄한 접근로로 이동이 용이함"
+    ],
+    "noise_filtering_summary": "계단 검출 결과 False로 확인. 이미지 분석 결과 실제로 계단이 없는 평지 접근 구조임을 확인. 노이즈나 오검출 없음"
+  },
+  "timestamp": "2025-06-06T23:43:15.748969"
+}

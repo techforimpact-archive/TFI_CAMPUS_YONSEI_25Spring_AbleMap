@@ -1,0 +1,104 @@
+{
+  "kakao_mapping": {
+    "place_id": "20126041",
+    "place_name": "CGV 신촌아트레온",
+    "coordinates": {
+      "lat": "37.5565639285478",
+      "lng": "126.940328119434"
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "CGV 신촌아트레온",
+    "roadNm": "신촌로_129"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 118,
+        "ratio": 0.004609375,
+        "estimated_size": "very small"
+      },
+      "building": {
+        "pixel_count": 18394,
+        "ratio": 0.718515625
+      }
+    },
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20030811",
+      "faclInfId": "20155825538",
+      "faclLat": "37.55656393",
+      "faclLng": "126.9403281",
+      "faclNm": "아트레온",
+      "faclTyCd": "주차장",
+      "lcMnad": "서울특별시 서대문구 신촌로 129",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011600-1-00200025"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "주출입구 높이차이 제거",
+        "주출입구 접근로"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 높이차이 제거",
+          "주출입구 접근로"
+        ]
+      },
+      "parking": {
+        "available": false,
+        "features": []
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 8,
+    "internal_accessibility_score": 3,
+    "final_accessibility_score": 5,
+    "stairs_count": "계단 없음 (평면 진입)",
+    "stairs_height": "해당 없음 - 입구가 보도와 같은 높이",
+    "stair_detection_confidence": "높음",
+    "alternative_route": true,
+    "alternative_route_description": "주출입구가 보도와 같은 높이에 위치하여 휠체어 사용자가 직접 진입 가능",
+    "recommendations": [
+      "장애인 전용 주차구역 설치 필요",
+      "장애인 화장실 설치가 시급함",
+      "엘리베이터 설치로 상층부 접근성 개선 필요",
+      "시각 장애인을 위한 점자 블록 및 음성 안내 시스템 설치 권장"
+    ],
+    "observations": [
+      "주출입구가 평면으로 되어 있어 휠체어 접근이 용이함",
+      "넓은 유리문으로 시야 확보가 좋음",
+      "보도와 입구 사이에 단차가 없음",
+      "영화관 시설임에도 기본적인 장애인 편의시설이 부족함"
+    ],
+    "noise_filtering_summary": "세그멘테이션에서 감지된 계단(0.46%)은 실제 입구 계단이 아닌 내부 또는 주변 요소로 판단됨. 실제 주출입구는 평면 접근 가능"
+  },
+  "timestamp": "2025-06-06T23:46:10.447361"
+}

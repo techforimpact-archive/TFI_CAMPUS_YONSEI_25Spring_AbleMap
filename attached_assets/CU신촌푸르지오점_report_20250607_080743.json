@@ -1,0 +1,96 @@
+{
+  "image_path": "data/imagedata/CU신촌푸르지오점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/CU신촌푸르지오점_overlay_20250607_080743.png",
+  "kakao_mapping": {
+    "place_id": "1261071612",
+    "place_name": "CU 신촌푸르지오점",
+    "coordinates": {
+      "lat": 37.5573527481625,
+      "lng": 126.942500021232
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "CU_신촌푸르지오점",
+    "roadNm": "신촌역로_7"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 954,
+        "ratio": 0.037265625,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 19141,
+        "ratio": 0.7476953125
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.8862348178137651,
+      "door_detection": 0.0,
+      "building_detection": 0.9994253173815371,
+      "sidewalk_detection": 0.7760627530364372,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 2,
+    "stairs_height": "약 20-30cm (일반적인 낮은 계단 2개)",
+    "stair_severity_assessment": "경미한 수준의 계단으로, 입구까지 2단의 낮은 계단이 있음. 높이는 표준적이나 휠체어 독립 접근에는 장애가 됨",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "플라스틱 상자들이 계단 좌측에 있으나 통행에는 지장 없음",
+      "점자블록이 설치되어 있어 시각장애인 접근성은 양호",
+      "입구 문은 자동문으로 보여 문 자체의 접근성은 우수"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로는 보이지 않으며, 정면 계단이 유일한 진입로로 보임",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태로는 휠체어 독립 접근 불가능",
+        "인근 경사로가 있는 다른 매장 이용 권장"
+      ],
+      "for_assisted": [
+        "동행인 1-2명의 도움으로 계단 통과 가능",
+        "계단이 낮아 비교적 안전하게 도움받을 수 있음",
+        "입구 자동문으로 계단만 통과하면 매장 이용 가능"
+      ],
+      "facility_improvements": [
+        "휴대용 경사로 설치로 즉시 접근성 개선 가능",
+        "영구적 경사로 설치 권장 (좌측 공간 활용 가능)",
+        "계단 측면 손잡이 설치로 보행 약자 안전성 향상"
+      ]
+    },
+    "observations": [
+      "CU 편의점 정면 입구에 2단의 계단 확인",
+      "계단 검출 신뢰도 0.89로 높은 정확도",
+      "점자블록 설치로 시각장애인 배려 확인",
+      "자동문 설치로 문턱 장벽은 없음",
+      "보도와 연결성은 양호하나 단차 존재"
+    ],
+    "noise_filtering_summary": "계단 검출이 명확하고 신뢰도가 높아 노이즈 필터링 불필요. 실제 2단의 계단이 주요 접근성 장애물로 확인됨",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:08:20.407997"
+}

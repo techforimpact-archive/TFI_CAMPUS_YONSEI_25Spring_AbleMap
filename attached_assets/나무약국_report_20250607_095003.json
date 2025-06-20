@@ -1,0 +1,103 @@
+{
+  "image_path": "data/imagedata/나무약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/나무약국_overlay_20250607_095003.png",
+  "kakao_mapping": {
+    "place_id": "425027300",
+    "place_name": "나무약국",
+    "coordinates": {
+      "lat": 37.5584026849485,
+      "lng": 126.938228336494
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "나무약국",
+    "roadNm": "명물길_33"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs",
+      "bench"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 31,
+        "ratio": 0.0012109375,
+        "estimated_size": "very small",
+        "estimated_count": 1
+      },
+      "bench": {
+        "pixel_count": 64,
+        "ratio": 0.0025,
+        "obstacle_type": "temporary"
+      },
+      "building": {
+        "pixel_count": 4668,
+        "ratio": 0.18234375
+      }
+    },
+    "additional_obstacles": [
+      "bench"
+    ],
+    "confidence_scores": {
+      "stairs_detection": 0.370546875,
+      "door_detection": 0.0,
+      "building_detection": 0.8899957155098543,
+      "sidewalk_detection": 0.9957803533250815,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 7,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 1,
+    "stairs_height": "약 15-20cm 높이의 단차",
+    "stair_severity_assessment": "경미한 수준으로, 보도블록과 건물 입구 사이에 작은 단차가 존재하는 것으로 보입니다. 검출 신뢰도가 낮고 pixel 수가 매우 적어 실제로는 보도 경계석이나 미세한 레벨 차이일 가능성이 높습니다.",
+    "stair_detection_confidence": "낮음",
+    "additional_obstacles_impact": [
+      "벤치: 임시 장애물로 영향도 낮음 (-0.2점)",
+      "화분: 고정 장애물이나 통행에 직접적 영향 없음",
+      "보도블록 패턴: 평탄하여 휠체어 통행에 문제없음"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": true,
+    "alternative_route_description": "넓은 보도 공간으로 인해 장애물을 우회할 수 있는 충분한 공간이 확보되어 있습니다",
+    "recommendations": {
+      "for_independent": [
+        "보도블록 경계 부분 주의하여 접근",
+        "벤치 주변 충분한 공간 확보 후 통행",
+        "건물 입구 앞 넓은 공간 활용"
+      ],
+      "for_assisted": [
+        "경미한 단차 부분에서 간단한 도움 요청",
+        "동행인이 먼저 경로 확인 후 안내"
+      ],
+      "facility_improvements": [
+        "입구 앞 미세한 단차 완전 제거",
+        "휠체어 접근성 안내 표지판 설치",
+        "야간 조명 강화로 단차 시인성 개선"
+      ]
+    },
+    "observations": [
+      "넓고 평탄한 보도블록이 설치되어 있음",
+      "건물 입구까지 충분한 공간이 확보됨",
+      "전반적으로 양호한 접근성을 보임",
+      "검출된 계단은 매우 작은 규모로 실제 장애 요소가 아닐 가능성 높음"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.37로 낮고, pixel 수가 31개(0.12%)로 매우 적어 노이즈일 가능성이 높습니다. 이미지 전체 맥락상 평탄한 보도 환경으로 판단되어 계단 영향을 최소화하여 평가했습니다.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T09:50:46.759424"
+}

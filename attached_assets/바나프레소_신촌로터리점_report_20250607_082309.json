@@ -1,0 +1,129 @@
+{
+  "image_path": "data/imagedata/바나프레소_신촌로터리점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/바나프레소_신촌로터리점_overlay_20250607_082309.png",
+  "kakao_mapping": {
+    "place_id": "930505287",
+    "place_name": "바나프레소 신촌로터리점",
+    "coordinates": {
+      "lat": 37.557522656657,
+      "lng": 126.937667594441
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "바나프레소_신촌로터리점",
+    "roadNm": "명물길_14"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 2762,
+        "ratio": 0.107890625,
+        "estimated_size": "medium",
+        "estimated_count": 5
+      },
+      "building": {
+        "pixel_count": 11314,
+        "ratio": 0.441953125
+      },
+      "railing_to_stairs_distance": 3.1622776601683795
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.7233066399733066,
+      "door_detection": 0.0,
+      "building_detection": 0.9997790348241118,
+      "sidewalk_detection": 0.852253756260434,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "severe",
+    "has_sidewalk": true,
+    "has_building": true,
+    "has_railing": true,
+    "has_stairs_railing": true,
+    "accessibility_score": 8
+  },
+  "facility_info": {
+    "available": true,
+    "basic_info": {
+      "estbDate": "20120731",
+      "faclInfId": "20155795416",
+      "faclLat": "0",
+      "faclLng": "0",
+      "faclNm": "일반음식점",
+      "faclTyCd": "일반음식점",
+      "lcMnad": "서울특별시 서대문구 명물길 14",
+      "salStaDivCd": "Y",
+      "salStaNm": "영업",
+      "wfcltDivCd": "017",
+      "wfcltId": "1141011600-1-00130029"
+    },
+    "facility_features": {
+      "evalInfo": [
+        "주출입구 접근로",
+        "주출입구(문)"
+      ]
+    },
+    "accessibility_details": {
+      "entrance": {
+        "accessible": true,
+        "features": [
+          "주출입구 접근로",
+          "주출입구(문)"
+        ]
+      },
+      "parking": {
+        "available": false,
+        "features": []
+      },
+      "restroom": {
+        "available": false,
+        "features": []
+      },
+      "elevator": {
+        "available": false
+      }
+    }
+  },
+  "llm_analysis": {
+    "external_accessibility_score": 3,
+    "internal_accessibility_score": 4,
+    "final_accessibility_score": 4,
+    "stairs_count": 5,
+    "stairs_height": "약 75-100cm (개당 15-20cm × 5개)",
+    "stair_severity_assessment": "매우 심각한 수준. 휠체어 사용자는 독립적 접근 불가능하며, 보행 보조기 사용자도 난간 지지 없이는 위험. 계단이 주출입구 접근의 유일한 경로로 보여 대체 경로 부재가 심각한 문제",
+    "stair_detection_confidence": "보통",
+    "additional_obstacles_impact": [
+      "계단 난간: 안전성 제공하나 휠체어 접근성 개선에는 도움 안됨",
+      "좁은 보도: 휠체어 회전 공간 부족 가능성",
+      "주변 적치물: 보행 동선을 더욱 제한"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "이미지상 경사로나 엘리베이터 등 대체 접근 경로가 확인되지 않음",
+    "recommendations": [
+      "휴대용 경사로 설치 검토 (임시 조치)",
+      "영구적 경사로 설치 필요 (1:12 경사 기준)",
+      "계단 측면 공간 활용한 리프트 설치 고려",
+      "최소한 호출벨 설치로 직원 보조 서비스 제공",
+      "계단 모서리 미끄럼 방지 처리 강화"
+    ],
+    "observations": [
+      "주출입구 접근을 위해 반드시 5개 계단 통과 필요",
+      "계단 폭은 충분하나 경사로 설치 공간 부족해 보임",
+      "난간이 설치되어 있으나 한쪽에만 존재",
+      "보도와 건물 입구 사이 상당한 높이차 존재",
+      "공공데이터상 주출입구 접근로가 있다고 되어 있으나 실제로는 계단만 존재"
+    ],
+    "noise_filtering_summary": "검출 신뢰도 0.72로 중간 수준. 이미지에서 명확히 보이는 5개 계단 구조와 검출 결과가 일치. 건물 구조와 계단 배치가 자연스러워 노이즈 가능성 낮음",
+    "analysis_mode": "hybrid"
+  },
+  "timestamp": "2025-06-07T08:23:46.915672"
+}

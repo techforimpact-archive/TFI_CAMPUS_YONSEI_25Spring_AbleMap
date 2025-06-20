@@ -1,0 +1,84 @@
+{
+  "image_path": "data/imagedata/대학약국신촌점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/대학약국신촌점_overlay_20250607_081639.png",
+  "kakao_mapping": {
+    "place_id": "23024074",
+    "place_name": "대학약국신촌점",
+    "coordinates": {
+      "lat": 37.559062152017,
+      "lng": 126.936748431874
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "대학약국신촌점",
+    "roadNm": "연세로_37-1"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 22958,
+        "ratio": 0.896796875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 0.9984536980573221,
+      "sidewalk_detection": 0.6704545454545454,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 9,
+    "assisted_access_score": 10,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "해당 없음 - 계단 없음",
+    "stair_severity_assessment": "계단이 감지되지 않았으며, 평지 접근이 가능한 것으로 보입니다",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "보도에서 입구까지 평탄한 접근 가능",
+      "유리문 입구가 넓어 보임"
+    ],
+    "confidence_level": "medium",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로 불필요 - 메인 입구로 직접 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "입구의 유리문이 자동문인지 확인 필요",
+        "문턱이 있을 경우 주의하여 진입"
+      ],
+      "for_assisted": [
+        "특별한 도움 없이도 접근 가능",
+        "필요시 문 개폐 도움 정도만 필요할 수 있음"
+      ],
+      "facility_improvements": [
+        "자동문이 아닐 경우 자동문 설치 권장",
+        "입구 앞 점자블록 설치로 시각장애인 접근성도 개선"
+      ]
+    },
+    "observations": [
+      "1층 상가 건물로 평지 접근 가능",
+      "넓은 유리문 입구 확인",
+      "보도와 입구 사이에 단차가 없어 보임",
+      "충분한 회전 공간 확보"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도 0.00으로 계단이 없음을 확인. 건물 검출 신뢰도 1.00으로 명확한 건물 구조 파악 가능",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:17:10.050345"
+}

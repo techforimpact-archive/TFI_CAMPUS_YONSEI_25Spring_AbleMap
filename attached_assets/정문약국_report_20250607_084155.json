@@ -1,0 +1,84 @@
+{
+  "image_path": "data/imagedata/정문약국.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/정문약국_overlay_20250607_084155.png",
+  "kakao_mapping": {
+    "place_id": "10720026",
+    "place_name": "정문약국",
+    "coordinates": {
+      "lat": 37.5592388458024,
+      "lng": 126.936763901223
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "서대문구",
+    "faclNm": "정문약국",
+    "roadNm": "연세로_41"
+  },
+  "accessibility_info": {
+    "has_stairs": false,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [],
+    "obstacle_details": {
+      "building": {
+        "pixel_count": 21228,
+        "ratio": 0.82921875
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.0,
+      "door_detection": 0.0,
+      "building_detection": 1.0,
+      "sidewalk_detection": 0.9994028662420382,
+      "overall_reliability": "low"
+    },
+    "stair_severity": "none",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 10
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 10,
+    "assisted_access_score": 10,
+    "recommended_access_score": 10,
+    "final_accessibility_score": 10,
+    "access_recommendation": "independent",
+    "stairs_count": 0,
+    "stairs_height": "계단 없음",
+    "stair_severity_assessment": "계단이 전혀 없어 휠체어 접근에 장애가 되지 않음",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "장애물이 감지되지 않아 접근성에 영향 없음"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "대체 경로가 필요하지 않음 - 주 출입구로 직접 접근 가능",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태가 매우 양호하므로 특별한 주의사항 없음",
+        "보도블록이 평탄하여 휠체어 이동이 원활함"
+      ],
+      "for_assisted": [
+        "동행인 도움이 필요하지 않음",
+        "독립적인 접근이 충분히 가능함"
+      ],
+      "facility_improvements": [
+        "현재 접근성이 우수하므로 특별한 개선사항 없음",
+        "향후에도 현재의 무단차 접근로를 유지하는 것이 중요"
+      ]
+    },
+    "observations": [
+      "약국 건물로 1층에 위치하여 계단이 없음",
+      "출입구가 보도블록과 동일한 높이에 위치",
+      "넓은 유리문으로 구성되어 출입이 용이함",
+      "보도블록이 평탄하고 잘 정비되어 있음",
+      "건물 앞 공간이 충분하여 휠체어 회전 가능"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.00으로 계단이 없음이 확실함. 건물과 보도 검출 신뢰도는 1.00으로 매우 높아 신뢰할 수 있는 분석 결과임",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:43:38.298153"
+}

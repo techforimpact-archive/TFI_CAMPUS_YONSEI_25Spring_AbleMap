@@ -1,0 +1,95 @@
+{
+  "image_path": "data/imagedata/투썸플레이스_마포노고산점.png",
+  "overlay_path": "/Users/kimseojin/Desktop/Yonsei/3학년/테크포임팩트프로젝트/accessibility_analyzer/data/results/overlays/투썸플레이스_마포노고산점_overlay_20250607_084645.png",
+  "kakao_mapping": {
+    "place_id": "804577234",
+    "place_name": "투썸플레이스 마포노고산점",
+    "coordinates": {
+      "lat": 37.5557422183902,
+      "lng": 126.93997159818
+    }
+  },
+  "location_info": {
+    "siDoNm": "서울특별시",
+    "cggNm": "마포구",
+    "faclNm": "투썸플레이스_마포노고산점",
+    "roadNm": "신촌로_128"
+  },
+  "accessibility_info": {
+    "has_stairs": true,
+    "has_ramp": false,
+    "entrance_accessible": true,
+    "obstacles": [
+      "stairs"
+    ],
+    "obstacle_details": {
+      "stairs": {
+        "pixel_count": 709,
+        "ratio": 0.0276953125,
+        "estimated_size": "small",
+        "estimated_count": 1
+      },
+      "building": {
+        "pixel_count": 17384,
+        "ratio": 0.6790625
+      }
+    },
+    "additional_obstacles": [],
+    "confidence_scores": {
+      "stairs_detection": 0.893888888888889,
+      "door_detection": 0.0,
+      "building_detection": 0.9920041417395307,
+      "sidewalk_detection": 0.8694298035457595,
+      "overall_reliability": "medium"
+    },
+    "stair_severity": "mild",
+    "has_sidewalk": true,
+    "has_building": true,
+    "accessibility_score": 8
+  },
+  "facility_info": null,
+  "llm_analysis": {
+    "independent_access_score": 6,
+    "assisted_access_score": 9,
+    "recommended_access_score": 9,
+    "final_accessibility_score": 9,
+    "access_recommendation": "assisted",
+    "stairs_count": 3,
+    "stairs_height": "약 45-60cm (계단당 15-20cm 추정)",
+    "stair_severity_assessment": "경미한 수준의 계단으로, 상가 건물 입구에 흔히 있는 3단 정도의 낮은 계단입니다. 계단 폭이 넓고 경사가 완만하여 동행인의 도움이 있다면 충분히 접근 가능합니다.",
+    "stair_detection_confidence": "높음",
+    "additional_obstacles_impact": [
+      "화분 및 조경시설: 경로를 약간 좁히지만 우회 가능 (-0.2점)",
+      "야외 테이블과 의자: 충분한 통행 공간 확보되어 영향 미미 (-0.1점)"
+    ],
+    "confidence_level": "high",
+    "alternative_route": false,
+    "alternative_route_description": "건물 정면에만 출입구가 있으며, 별도의 경사로나 우회 경로는 보이지 않습니다.",
+    "recommendations": {
+      "for_independent": [
+        "현재 상태에서는 독립적 접근이 어려우므로 사전에 동행인 동반 필요",
+        "건물 관리자에게 이동식 경사로 설치 요청 고려"
+      ],
+      "for_assisted": [
+        "1-2명의 동행인과 함께 방문 권장",
+        "계단이 넓고 안정적이므로 수동 휠체어 들어올리기 가능",
+        "방문 전 매장에 연락하여 도움 요청 가능"
+      ],
+      "facility_improvements": [
+        "고정식 또는 이동식 경사로 설치 필요",
+        "계단 양쪽에 안전 손잡이 설치 권장",
+        "장애인 접근 가능 표시 및 안내 필요"
+      ]
+    },
+    "observations": [
+      "CU 편의점과 카페가 입점한 상가 건물",
+      "보도와 건물 사이에 3단 정도의 낮은 계단 존재",
+      "계단 폭이 넓어 동행인 도움시 접근 용이",
+      "주변 보도는 평탄하고 넓어 휠체어 이동에 양호",
+      "출입문은 유리문으로 폭이 충분해 보임"
+    ],
+    "noise_filtering_summary": "계단 검출 신뢰도가 0.89로 높아 검출 결과를 신뢰할 수 있으며, 이미지에서도 명확히 3단의 계단이 확인됩니다. 세그멘테이션 결과의 노란색 영역이 실제 계단 위치와 일치합니다.",
+    "analysis_mode": "image_only"
+  },
+  "timestamp": "2025-06-07T08:47:31.012938"
+}
