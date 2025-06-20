@@ -113,6 +113,70 @@ AbleMap aims to create an inclusive, barrier-free society where not only wheelch
 - **Regional Expansion**: Service scaling to major cities nationwide
 - **Feature Diversification**: Adding detailed metrics (wheelchair width, slope angle, door width)
 
+## 🛠️ Installation & Execution
+
+The service is currently deployed and available at:  
+🔗 https://lrl.kr/chxSV
+
+If you want to run the project locally, follow the instructions below.
+
+---
+
+### 📁 1. Clone the Repository
+
+```bash
+git clone https://github.com/KSJcompany/TFI_CAMPUS_YONSEI_25Spring_AbleMap-1.git
+cd TFI_CAMPUS_YONSEI_25Spring_AbleMap-1
+```
+
+---
+
+### 🚀 Running the Web Service (AbleMap)
+
+The web service source code is located inside the `AbleMap/` directory.
+
+1. Install dependencies:
+
+```bash
+cd AbleMap
+pip install -r requirements.txt
+```
+
+2. Run the development server:
+
+```bash
+python manage.py runserver
+```
+
+3. Open your web browser and go to:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+### 📊 Running Data Preprocessing & Accessibility Analysis
+
+The data preprocessing and analysis code is located in the `accessibility_analyzer/` directory.
+
+1. Install dependencies:
+
+```bash
+cd ../accessibility_analyzer
+pip install -r requirements.txt
+```
+
+2. Run the analysis with an input image:
+
+```bash
+python main.py --image data/images/example.png
+```
+
+> Replace `example.png` with the path to your input image.
+
+---
+
 ## 🛠 개발 환경 (Development Environment)
 
 ### Frontend
