@@ -93,7 +93,7 @@ class FacilityData:
     
     def get_facility_list(self, page_no: int = 1, num_of_rows: int = 100, address: str = None) -> List[Dict]:
         """장애인편의시설 목록을 가져옴"""
-        url = f"{self.base_url}/get"
+        url = f"{self.base_url}/getDisConvFaclList"
         params = {
             'serviceKey': self.api_key,
             'pageNo': str(page_no),
@@ -167,7 +167,7 @@ class FacilityData:
             logger.error("wfcltId가 제공되지 않았습니다.")
             return None
             
-        url = f"{self.base_url}/getList"
+        url = f"{self.base_url}/getFacInfoOpenApiJpEvalInfoList"
         params = {
             'serviceKey': self.api_key,
             'wfcltId': wfclt_id,

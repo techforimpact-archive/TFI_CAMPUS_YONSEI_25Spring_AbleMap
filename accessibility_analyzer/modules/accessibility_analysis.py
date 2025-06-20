@@ -26,10 +26,12 @@ class AccessibilityAnalyzer:
         # 기본 접근성 정보 초기화
         accessibility_info = {
             'has_stairs': False,
-            'has_ramp': False,  # 현재 데이터셋에 ramp 클래스가 없으므로 항상 False
+            'has_ramp': False,
             'entrance_accessible': True,
             'obstacles': [],
-            'obstacle_details': {}
+            'obstacle_details': {},
+            'additional_obstacles': [],  # 새로 추가
+            'confidence_scores': {}  # 새로 추가
         }
         
         # 계단 감지
@@ -42,11 +44,28 @@ class AccessibilityAnalyzer:
             stairs_pixels = np.count_nonzero(stairs_mask)
             total_pixels = seg_map.size
             stairs_ratio = stairs_pixels / total_pixels
+
+            stair_count = self._estimate_stair_count(stairs_mask)
+
             accessibility_info['obstacle_details']['stairs'] = {
                 'pixel_count': int(stairs_pixels),
                 'ratio': float(stairs_ratio),
-                'estimated_size': self._estimate_size(stairs_ratio)
+                'estimated_size': self._estimate_size(stairs_ratio),
+                'estimated_count': stair_count
             }
+
+            # 계단 심각도 분석
+            accessibility_info['stair_severity'] = self._analyze_stair_severity(stair_count, stairs_ratio)
+        else:
+            accessibility_info['stair_severity'] = 'none'
+
+        # 추가 장애물 감지 (계단 외)
+        additional_obstacles, additional_obstacle_details = self._detect_additional_obstacles(seg_map)
+        accessibility_info['additional_obstacles'] = additional_obstacles
+        accessibility_info['obstacles'].extend(additional_obstacles)
+        
+        # 추가 장애물 세부 정보를 기존 obstacle_details에 병합
+        accessibility_info['obstacle_details'].update(additional_obstacle_details)
         
         # 문 감지 및 분석
         door_mask = seg_map == self.class_map['door']
@@ -114,11 +133,205 @@ class AccessibilityAnalyzer:
                 if railing_to_stairs < self.threshold_distance:
                     accessibility_info['has_stairs_railing'] = True
         
-        # 종합적인 접근성 판단
+        # 신뢰도 점수 계산
+        accessibility_info['confidence_scores'] = self._calculate_confidence_scores(seg_map)
+        
+        # 기본 접근성 점수 (참고용)
         accessibility_score = self._calculate_accessibility_score(accessibility_info)
         accessibility_info['accessibility_score'] = accessibility_score
         
         return accessibility_info
+    
+    def _detect_additional_obstacles(self, seg_map):
+        """계단 외 추가 장애물 감지"""
+        additional_obstacles = []
+        obstacle_details = {}  # 로컬 변수로 변경
+        
+        # 감지할 장애물 목록과 최소 픽셀 임계값
+        obstacle_classes = {
+            'car': 100,
+            'truck': 100, 
+            'motorcycle': 50,
+            'bicycle': 30,
+            'pole': 20,
+            'fire_hydrant': 15,
+            'potted_plant': 25,
+            'chair': 20,
+            'bench': 30,
+            'barrier': 40,
+            'person': 50,  # 사람도 일시적 장애물로 고려
+            'traffic_sign': 15
+        }
+        
+        for obstacle_name, min_pixels in obstacle_classes.items():
+            if obstacle_name in self.class_map:
+                obstacle_mask = seg_map == self.class_map[obstacle_name]
+                if np.any(obstacle_mask):
+                    obstacle_pixels = np.count_nonzero(obstacle_mask)
+                    if obstacle_pixels >= min_pixels:
+                        additional_obstacles.append(obstacle_name)
+                        # 장애물 세부 정보를 로컬 딕셔너리에 저장
+                        obstacle_details[obstacle_name] = {
+                            'pixel_count': int(obstacle_pixels),
+                            'ratio': float(obstacle_pixels / seg_map.size),
+                            'obstacle_type': self._categorize_obstacle_type(obstacle_name)
+                        }
+        
+        return additional_obstacles, obstacle_details  # 두 개 값 반환
+
+    
+    def _categorize_obstacle_type(self, obstacle_name):
+        """장애물 유형 분류"""
+        fixed_obstacles = ['pole', 'fire_hydrant', 'barrier', 'traffic_sign']
+        movable_obstacles = ['car', 'truck', 'motorcycle', 'bicycle', 'chair', 'potted_plant']
+        temporary_obstacles = ['person', 'bench']
+        
+        if obstacle_name in fixed_obstacles:
+            return 'fixed'
+        elif obstacle_name in movable_obstacles:
+            return 'movable'
+        elif obstacle_name in temporary_obstacles:
+            return 'temporary'
+        else:
+            return 'unknown'
+
+    def _estimate_stair_count(self, stairs_mask):
+        """계단 개수 추정"""
+        from scipy import ndimage
+        
+        # 형태학적 연산으로 개별 계단 영역 분리
+        kernel = np.ones((3, 3), np.uint8)
+        cleaned = ndimage.binary_opening(stairs_mask, kernel)
+        
+        # 연결된 컴포넌트로 개별 계단 구분
+        labeled, num_features = ndimage.label(cleaned)
+        
+        # 너무 작은 영역 제거 후 계단 수 추정
+        valid_stairs = 0
+        for i in range(1, num_features + 1):
+            component_size = np.sum(labeled == i)
+            if component_size > 10:  # 최소 크기 임계값
+                valid_stairs += 1
+        
+        # 픽셀 비율 기반 추가 추정
+        stairs_ratio = np.sum(stairs_mask) / stairs_mask.size
+        if stairs_ratio > 0.05:  # 큰 계단 영역
+            estimated_from_ratio = max(3, int(stairs_ratio * 50))
+            return max(valid_stairs, estimated_from_ratio)
+        
+        return max(1, valid_stairs)  # 최소 1개
+
+    def _analyze_stair_severity(self, stair_count, stairs_ratio):
+        """계단 심각도 분석"""
+        if stair_count == 0:
+            return 'none'
+        elif stair_count >= 5 or stairs_ratio > 0.1:
+            return 'severe'  # 심각 (5단 이상 또는 큰 면적)
+        elif stair_count >= 3 or stairs_ratio > 0.05:
+            return 'moderate'  # 중간 (3-4단)
+        else:
+            return 'mild'  # 경미 (1-2단)
+
+    def _calculate_confidence_scores(self, seg_map):
+        """검출 신뢰도 계산"""
+        confidence_scores = {}
+        
+        # 각 클래스별 검출 영역의 크기와 형태를 바탕으로 신뢰도 추정
+        for class_name in ['stairs', 'door', 'building', 'sidewalk']:
+            if class_name in self.class_map:
+                class_mask = seg_map == self.class_map[class_name]
+                if np.any(class_mask):
+                    # 영역 크기 기반 신뢰도
+                    ratio = np.sum(class_mask) / seg_map.size
+                    size_confidence = min(1.0, ratio * 100)  # 크기가 클수록 높은 신뢰도
+                    
+                    # 형태 기반 신뢰도 (연결성, 모양 등)
+                    shape_confidence = self._calculate_shape_confidence(class_mask, class_name)
+                    
+                    # 종합 신뢰도
+                    confidence_scores[f'{class_name}_detection'] = (size_confidence + shape_confidence) / 2
+                else:
+                    confidence_scores[f'{class_name}_detection'] = 0.0
+        
+        # 전체 신뢰도
+        if confidence_scores:
+            avg_confidence = sum(confidence_scores.values()) / len(confidence_scores)
+            if avg_confidence > 0.8:
+                reliability = 'high'
+            elif avg_confidence > 0.5:
+                reliability = 'medium'
+            else:
+                reliability = 'low'
+            confidence_scores['overall_reliability'] = reliability
+        
+        return confidence_scores
+
+    def _calculate_shape_confidence(self, mask, class_name):
+        """형태 기반 신뢰도 계산"""
+        from scipy import ndimage
+        
+        # 연결된 컴포넌트 분석
+        labeled, num_features = ndimage.label(mask)
+        
+        if num_features == 0:
+            return 0.0
+        
+        # 가장 큰 영역의 형태 분석
+        largest_component = 0
+        largest_size = 0
+        for i in range(1, num_features + 1):
+            component_size = np.sum(labeled == i)
+            if component_size > largest_size:
+                largest_size = component_size
+                largest_component = i
+        
+        if largest_component == 0:
+            return 0.0
+        
+        component_mask = (labeled == largest_component)
+        
+        # 클래스별 형태 특성 확인
+        if class_name == 'stairs':
+            # 계단은 일반적으로 가로로 긴 형태
+            return self._check_rectangular_shape(component_mask)
+        elif class_name == 'door':
+            # 문은 세로로 긴 직사각형
+            return self._check_vertical_rectangle(component_mask)
+        else:
+            # 기본적인 연결성 확인
+            return min(1.0, largest_size / np.sum(mask))
+
+    def _check_rectangular_shape(self, mask):
+        """직사각형 형태 확인"""
+        # 바운딩 박스와 실제 영역의 비율로 직사각형성 측정
+        rows, cols = np.where(mask)
+        if len(rows) == 0:
+            return 0.0
+        
+        height = np.max(rows) - np.min(rows) + 1
+        width = np.max(cols) - np.min(cols) + 1
+        bbox_area = height * width
+        actual_area = np.sum(mask)
+        
+        return min(1.0, actual_area / bbox_area)
+
+    def _check_vertical_rectangle(self, mask):
+        """세로 직사각형 확인"""
+        rows, cols = np.where(mask)
+        if len(rows) == 0:
+            return 0.0
+        
+        height = np.max(rows) - np.min(rows) + 1
+        width = np.max(cols) - np.min(cols) + 1
+        
+        # 높이가 너비보다 크면 세로 직사각형
+        aspect_ratio = height / width if width > 0 else 0
+        vertical_score = min(1.0, aspect_ratio / 2.0)  # 2:1 비율을 이상으로 설정
+        
+        # 직사각형성도 함께 고려
+        rectangularity = self._check_rectangular_shape(mask)
+        
+        return (vertical_score + rectangularity) / 2
     
     def _calculate_object_distance(self, mask1, mask2):
         """

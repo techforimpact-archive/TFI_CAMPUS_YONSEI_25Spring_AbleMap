@@ -7,6 +7,8 @@ import time
 import requests
 from pathlib import Path
 from datetime import datetime
+import pandas as pd
+import json
 
 from modules.segmentation import SegmentationModel
 from modules.accessibility_analysis import AccessibilityAnalyzer
@@ -22,6 +24,79 @@ from config import (
     IMAGES_DIR, OVERLAY_DIR, REPORTS_DIR, 
     USE_FASTAPI, FASTAPI_HOST, FASTAPI_PORT
 )
+
+import pandas as pd
+import json
+
+def load_kakao_mapping_data(csv_path="processed_output.csv"):
+    """
+    CSV 파일에서 카카오 매핑 데이터를 로드하여 딕셔너리로 반환
+    
+    Args:
+        csv_path: CSV 파일 경로
+    
+    Returns:
+        dict: 파일명을 키로 하는 매핑 딕셔너리
+    """
+    try:
+        df = pd.read_csv(csv_path)
+        mapping_data = {}
+        
+        for _, row in df.iterrows():
+            filename = row['파일명']
+            place_id = str(row['숫자'])
+            address = row['주소']
+            
+            # 파일명에서 확장자 제거하고 _ -> 공백 변환 (place_name용)
+            place_name = filename.replace('.png', '').replace('_', ' ')
+            
+            # 주소 파싱
+            address_parts = address.split('_')
+            si_do_nm = address_parts[0]
+            cgg_nm = address_parts[1]
+            road_nm = '_'.join(address_parts[2:])  # 두번째 _ 이후 모두
+            facl_nm = filename.replace('.png', '')  # 확장자만 제거, _ 유지
+            
+            mapping_data[filename] = {
+                "kakao_mapping": {
+                    "place_id": place_id,
+                    "place_name": place_name,
+                    "coordinates": {
+                        "lat": None,
+                        "lng": None
+                    }
+                },
+                "location_info": {
+                    "siDoNm": si_do_nm,
+                    "cggNm": cgg_nm,
+                    "faclNm": facl_nm,
+                    "roadNm": road_nm
+                }
+            }
+        
+        return mapping_data
+    except Exception as e:
+        logger.error(f"카카오 매핑 데이터 로드 실패: {str(e)}")
+        return {}
+
+def get_location_info_from_mapping(image_path, mapping_data):
+    """
+    이미지 경로에서 파일명을 추출하여 매핑 데이터에서 위치 정보 반환
+    
+    Args:
+        image_path: 이미지 파일 경로
+        mapping_data: 매핑 딕셔너리
+    
+    Returns:
+        dict: 카카오 매핑 및 위치 정보
+    """
+    filename = os.path.basename(image_path)
+    
+    if filename in mapping_data:
+        return mapping_data[filename]
+    else:
+        logger.warning(f"매핑 데이터에서 {filename}을 찾을 수 없습니다.")
+        return None
 
 @measure_execution_time
 def process_image(image_path, output_dir=None, send_to_api=False):
@@ -45,10 +120,21 @@ def process_image(image_path, output_dir=None, send_to_api=False):
     
     # 출력 경로 설정
     output_paths = generate_output_paths(image_path, output_dir)
+
+    mapping_data = load_kakao_mapping_data()
     
     # 위치 정보 추출
-    location_info = extract_location_from_image(image_path)
-    logger.info(f"추출된 위치 정보: {location_info}")
+    location_mapping = get_location_info_from_mapping(image_path, mapping_data)
+    if location_mapping:
+        # 새로운 형식의 위치 정보 사용
+        kakao_mapping = location_mapping["kakao_mapping"]
+        location_info = location_mapping["location_info"]
+        logger.info(f"매핑 데이터에서 위치 정보 로드: {location_info['faclNm']}")
+    else:
+        # 매핑 데이터가 없는 경우 기존 방식 사용
+        location_info = extract_location_from_image(image_path)
+        kakao_mapping = None
+        logger.info(f"기존 방식으로 위치 정보 추출: {location_info}")
     
     try:
         # 세그멘테이션 모델 초기화 및 실행
@@ -67,25 +153,45 @@ def process_image(image_path, output_dir=None, send_to_api=False):
         accessibility_info = analyzer.analyze(seg_map)
         
         # 장애인편의시설 데이터 가져오기
-        logger.info("Fetching facility data...")
+        logger.info("Checking facility data availability...")
         facility_data = FacilityData()
         facility_info = facility_data.get_facility_info(location_info)
         
+        # 공공데이터 사용 여부에 따른 처리 분기
+        if facility_info and facility_info.get("available", False):
+            logger.info("Public facility data available - using hybrid scoring")
+            analysis_mode = "hybrid"  # 외부 40% + 내부 60%
+        else:
+            logger.info("No public facility data - using image-based analysis only")
+            analysis_mode = "image_only"  # 외부 점수만 사용
+            facility_info = None  # LLM에 None 전달하여 이미지 기반 분석 모드 활성화
+        
         # LLM 분석
-        logger.info("Requesting LLM analysis...")
+        logger.info(f"Requesting LLM analysis (mode: {analysis_mode})...")
         llm = LLMAnalyzer()
         llm_analysis = llm.analyze_image(image_path, output_paths["overlay"], accessibility_info, facility_info)
         
+        # 분석 모드 정보 추가
+        if isinstance(llm_analysis, dict):
+            llm_analysis["analysis_mode"] = analysis_mode 
+
         # 결과 종합
         result = {
             "image_path": image_path,
             "overlay_path": output_paths["overlay"],
+        }
+        
+        # 카카오 매핑 정보가 있으면 추가
+        if kakao_mapping:
+            result["kakao_mapping"] = kakao_mapping
+        
+        result.update({
             "location_info": location_info,
             "accessibility_info": accessibility_info,
             "facility_info": facility_info,
             "llm_analysis": llm_analysis,
             "timestamp": datetime.now().isoformat()
-        }
+        })
         
         # 보고서 저장
         logger.info("Saving report...")
