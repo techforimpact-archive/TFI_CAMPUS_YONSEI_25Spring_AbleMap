@@ -296,11 +296,13 @@ The service is currently running in the following environment:
 - **Static Files**: Built into the dist/public directory
 - **Environment Variables**: Managed separately for the production environment
 <br/>
-<br/>
 
 ## Acknowledgement
 본 프로젝트는 카카오임팩트 테크포임팩트 프로그램을 통해 개발되었습니다.  
 ![카카오임팩트 로고](./assets/kakao_impact_logo.png)
+
+<br/>
+<br/>
 
 <div align="center">
 <p><strong>누군가에겐 오늘의 외출이 모험이기에, 그 모험이 덜 두렵도록 저희가 돕겠습니다. <br/> (For those whose every outing is an adventure, we’re here to help make each step a little braver and a little brighter.)</strong></p>
